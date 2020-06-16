@@ -22,6 +22,7 @@ Proposed solutions to fix legal drafting:
 
 - <teach_humans>
 - <summarize_for_humans>
+- <visualization>
 - <spreadsheets_for_law>
 - <computable_contracts>
 

@@ -7,7 +7,7 @@ tags:
 
 # Spreadsheets for law
 
-TODO
+TODO. Sounds like it's related to <tabular_interface> ?
 
 Related papers:
 
