@@ -4,6 +4,8 @@ date: "2020-06-15"
 
 # DAML smart contracts
 
+[DAML web page](https://daml.com/)
+
 A different interpretation of contracts as code, where the contracts are
 automatically generated and signed by computers and sent between servers.
 

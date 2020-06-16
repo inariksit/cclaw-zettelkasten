@@ -8,8 +8,8 @@ date: "2020-06-15"
 
 Humans are imprecise:
 * Incomplete information
-* Semantically vague
-* Syntactically ambiguous (e.g. <scope_ambiguity>)
+* Semantically vague (<generality>, …)
+* Syntactically ambiguous (<scope_ambiguity>, …)
 
 ### Legal drafting uses a suboptimal format
 Plain text is lacking:
@@ -18,6 +18,10 @@ Plain text is lacking:
 
 Proposed solutions to fix legal drafting:
 
-- <normalized_legal_drafting>
+- <teach_humans> 
 - <spreadsheets_for_law>
 - <computable_contracts>
+
+Alternative points of view:
+
+- <advantages_of_imprecision>

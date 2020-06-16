@@ -1,7 +1,14 @@
 ---
 date: "2020-06-15"
+tags:
+  - concept
+  - approach
 ---
 
 # Spreadsheets for law
 
-I don't know yet what this is, but Meng thinks it's important.
+TODO
+
+Related papers:
+
+- <introduction_to_logical_spreadsheets>
