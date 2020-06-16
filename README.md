@@ -1,4 +1,4 @@
 # zettelkasten
 Notes for the CCLAW reading list in zettelkasten format
 
-Use https://neuron.zettel.page/ to create nice interlinked html.
+Use https://neuron.zettel.page/ to create nice interlinked html. (The `.neuron/` directory isn't under version control.)
