@@ -4,7 +4,9 @@ date: "2020-06-15"
 
 # Controlled Natural Language
 
-Based on real natural languages, but restricted in some way. (Paraphrased from [SIGCNL definition](https://www.sigcnl.org/index.html).)
+Based on real natural languages, but restricted in one or more ways described below.
+
+This entry is paraphrased from [SIGCNL definition](https://www.sigcnl.org/index.html).
 
 ## Types of restrictions
 
@@ -25,6 +27,7 @@ Variations [man with a telescope] and [saw with a telescope] need to be marked e
 
 Example: TODO
 
+
 ## Purposes
 
 ### Improve communication among humans
@@ -38,6 +41,17 @@ People who work on ships need to learn a specific subset of English. When your s
 instead of "the ship has crashed in ice, can somebody help me?"
 
 This allows people to work on ships without knowing the full English language.
-##
--
-Some CNLs are designed to improve communication among humans, especially for non-native speakers of the respective natural language. In other cases, the restrictions on the language are supposed to make it easier for computers to analyze such texts in order to improve computer-aided, semi-automatic, or automatic translations into other languages. A third group of CNL has the goal to enable reliable automated reasoning and formal knowledge representation from seemingly natural texts.
+
+See also [Simplified Technical English](https://en.wikipedia.org/wiki/Simplified_Technical_English).
+
+### Facilitate (semi-)automated NLP
+
+Example: [Set of expressions for describing accessibility of places](https://www.aclweb.org/anthology/W15-3301.pdf)
+
+The CNL described makes it possible to automatically translate accessibility descriptions to other languages, and to generate them from a database of structured input.
+
+### Enable automated reasoning and formal knowledge representation
+
+Example: [Attempto Controlled English](https://en.wikipedia.org/wiki/Attempto_Controlled_English)
+
+A fragment of (semi-natural) English which can be unambiguously translated into first-order logic.
