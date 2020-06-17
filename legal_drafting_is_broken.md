@@ -22,10 +22,8 @@ Proposed solutions to fix legal drafting:
 
 - <teach_humans>
 - <summarize_for_humans>
-- <visualization>
-- <spreadsheets_for_law>
-- <computable_contracts>
-
+- <automatic_contract_processing>
+- <rules_as_code>
 Alternative points of view:
 
 - <advantages_of_imprecision>
