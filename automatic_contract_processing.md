@@ -6,7 +6,7 @@ tags:
 
 # Automatic contract-processing
 
-Tasks that can be performed on <contract>s.
+Tasks that can be performed on one or more <contract>s.
 
 This list is from [Camilleri (2017)](https://gupea.ub.gu.se/bitstream/2077/53815/1/gupea_2077_53815_1.pdf), which in turn cites Prisacariu's presentation from 2013. Slides are no longer online.
 

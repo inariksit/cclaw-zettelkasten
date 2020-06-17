@@ -26,8 +26,8 @@ Proposed solutions to fix legal drafting:
 
 - <teach_humans>
 - <summarize_for_humans>
-- <automatic_contract_processing>
 - <rules_as_code>
+- <contracts_as_code>
 - Legal <ontology>
 
 Alternative points of view:

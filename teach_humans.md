@@ -8,7 +8,9 @@ tags:
 
 The only feasible approach before computers were mainstream.
 
-(TODO: is there modern support for this approach?)
+(TODO: modern support for this approach)
+
+May use tools such as <visualization> or linters as help.
 
 Examples:
 

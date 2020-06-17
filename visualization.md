@@ -4,7 +4,7 @@ tags:
   - approach
 ---
 
-# Visualization of contracts
+# Visualization
 
 Visual representations of legal text, in order to make it easier for humans to read.
 
