@@ -10,7 +10,7 @@ _Contract_ means slightly different things in different fields. Following descri
 
 ### Legal contract
 
-Normative text that describes an agreement between parties. The parties are bound by law to fulfil the contract. (Even if the contract is [ridiculous](https://www.huffpost.com/entry/russian-rewrites-credit-agreement-sues-bank_n_3728105).)
+Normative text that describes an agreement between parties. The parties are bound by law to fulfil the contract. (Even if the contract is [ridiculous](https://www.rt.com/business/man-outsmarts-banks-wins-court-221/).)
 
 ### Financial contract
 
