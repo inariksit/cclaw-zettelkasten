@@ -4,7 +4,7 @@ tags:
   - paper
 ---
 
-# Normalized legal drafting and the Query method
+# Normalized legal drafting and the Query method (Allen, 1978)
 
 1978 paper by Layman E. Allen: _Normalized legal drafting and the Query method_.
 

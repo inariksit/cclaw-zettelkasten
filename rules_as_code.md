@@ -4,11 +4,11 @@ tags:
   - approach
 ---
 
-# Rules as Code
+# Rules as code
 
 Legal drafting = writing code.
 
-(Remember the old days when you had to write contract in English and then <formal_models_of_legal_text>)
+(Remember the old days when you had to draft in English and then <formal_models_of_legal_text>)
 
 Useful things can be generated from that code:
 - <automatic_contract_processing>

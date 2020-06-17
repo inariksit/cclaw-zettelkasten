@@ -10,8 +10,4 @@ Kind of like this zettelkasten: here we link concepts to each other. In addition
 
 Contrast with a web of free text, this kind of structure allows for e.g. automated question answering.
 
-### Legal ontologies
-
-TODO
-
-- <legalruleml>
+(That is just one kind of ontology, there are other designs. I don't know this area very well. But other ontologies seem to contain _axioms_ or _facts_.)

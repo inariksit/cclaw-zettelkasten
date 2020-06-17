@@ -22,13 +22,10 @@ Plain text is lacking:
 * Can't be checked for inconsistencies (except by humans who aren't good at it)
 * Can't keep track of the overall state. If one thing changes, the rest needs to be updated manually.
 
-Proposed solutions to fix legal drafting:
+Approaches to fix legal drafting:
 
-- <teach_humans>
-- <summarize_for_humans>
-- <rules_as_code>
-- <contracts_as_code>
-- Legal <ontology>
+<z:zettels?tag=approach&cf>
+
 
 Alternative points of view:
 

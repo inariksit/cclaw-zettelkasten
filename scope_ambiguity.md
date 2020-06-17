@@ -4,7 +4,7 @@ date: "2020-06-15"
 
 # Scope ambiguity
 
-Example from Layman E. Allen (1978) <normalized_legal_drafting_query_method>
+Example from <normalized_legal_drafting_query_method>
 
 > Persons who are doctors and lawyers qualify.
 
