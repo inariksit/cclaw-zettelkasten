@@ -7,7 +7,7 @@ tags:
 # Contracts as code
 
 Broad term that covers
-- <automatic_contract_processing> of <legal_contract>s
+- <automatic_contract_processing> of legal_contracts
 - <smart_contract>
 
 ### Languages for writing contracts as code

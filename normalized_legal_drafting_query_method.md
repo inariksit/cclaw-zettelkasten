@@ -32,7 +32,7 @@ Aims to fix _unintended_ syntactic ambiguity, imprecision, confusing turn of phr
 
 Advantages:
 
-* Exposes <scope_ambiguity> when you need to put things in parallel and be explicit about what is left unsaid.
+* Exposes <scope_ambiguity&cf> when you need to put things in parallel and be explicit about what is left unsaid.
 * Visual graph shows more clearly different ways of reaching a state, etc.
 
 ### Query method
