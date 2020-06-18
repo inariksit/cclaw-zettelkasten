@@ -2,6 +2,7 @@
 date: "2020-06-16"
 tags:
   - paper
+  - todo
 ---
 
 # An introduction to logical spreadsheets
