@@ -21,7 +21,6 @@ jobs:
     #   uses: hmarr/debug-action@v1.0.0
     - name: Build site
       run: neuron -d . rib
-    - run: nix-store -q -R $(neuron)
     # - name: push
     #   uses: github-actions-x/commit@master
     #   with:
