@@ -2,6 +2,7 @@
 date: "2020-06-16"
 tags:
   - approach
+  - todo
 ---
 
 # Teach humans to draft better

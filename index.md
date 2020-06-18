@@ -31,3 +31,9 @@ Approaches to fix legal drafting:
 ### Limitations
 
 See <fundamental_limits>
+
+## Entries marked as TODO
+
+You're welcome to revise, add to, split, merge etc. _any entry_ in this zettelkasten. But these ones with the tag `TODO` are particularly unfinished.
+
+<z:zettels?tag=todo&cf>
