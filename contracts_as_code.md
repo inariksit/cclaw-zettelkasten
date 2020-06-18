@@ -2,6 +2,7 @@
 date: "2020-06-17"
 tags:
   - approach
+  - todo
 ---
 
 # Contracts as code
@@ -16,7 +17,7 @@ Broad term that covers
 
 ### Terminology
 
-Documenting here what terms are used where.
+Documenting here what terms are used where. TODO make sense of the terminology.
 
 Used in Surden 2012 <computable_contracts>
 - “computable contract(ing)”

@@ -11,14 +11,14 @@ Visual representations of legal text, in order to make it easier for humans to r
 ### Diagrams
 
 - [C-O diagrams](http://www.cse.chalmers.se/~gersch/scc2010.pdf)
-- Diagram notation in <normalized_legal_drafting_query_method> (Allen 1978)
+- Diagram notation in <normalized_legal_drafting_query_method>
 
 ### Formatting
 
 More low-key visualization aid.
 * Break down sentences into smaller chunks
 * Use bullet points
-* Use intendation
+* Use indentation
 * Use hyphens or parentheses to avoid attachment ambiguity
 
 Example from [Camilleri (2017)](https://gupea.ub.gu.se/bitstream/2077/53815/1/gupea_2077_53815_1.pdf):
