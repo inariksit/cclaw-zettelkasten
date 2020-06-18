@@ -27,3 +27,7 @@ On the other hand, there are also <advantages_of_imprecision>.
 Approaches to fix legal drafting:
 
 <z:zettels?tag=approach>
+
+### Limitations
+
+See <fundamental_limits>
