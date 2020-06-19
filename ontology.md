@@ -85,3 +85,15 @@ Quote from [Herbelot, 2011](https://web.archive.org/web/20130704143830/http://ww
 >    `truck car motorcycle plane engine hamster.`  
 >
 > Because lorries have wheels and hamsters have too.
+
+## Use of "Ontology" in Expert Systems
+
+The word ontology with regard to expert systems is also used to refer to the data structure of known data objects, and their relationships to one another. This may not be an external resource such as a pre-populated OWL ontology, but may be defined inside the programming language itself, for example as object-oriented programming class definitions.
+
+In this context the "ontology" is usually distinguished from the "rules".
+
+As an example, in Oracle Intelligent Advisor, the "Data" tab sets out objects, sub-objects, attributes, and relationships, including cardinality and bi-directionality. These are all things that ontology languages like OWL allow you to specify, and which could conceivebaly be imported from an OWL library.
+
+"Rules" on the other hand, specify the implications arising from different conditions, and have a semantic meaning which is more complicated than can be expressed in the logic of ontology languages, which are usually based on Description Logic.
+
+In this sense "a person must pay taxes on their income" is a rule, but the fact that "a person has an income" is an ontological fact, which might be expressed as a class definition, and referred to as `person.income`.
