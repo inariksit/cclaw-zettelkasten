@@ -23,5 +23,13 @@ Example from Mitrović et al. _[Modeling Legal Terminology in SUMO](https://www.
       (modalAttribute ?FORMULA Obligation)
       (modalAttribute ?FORMULA Permission))
 
-
 See also: <legalruleml>
+
+## Comment from Jason
+The above example is of a lexical ontology, not a legal one, just applied to a legal source material. A legal ontology does not "allow you to specify relations and rules". Ontological languages usually do not support the logical semantics required for legal rules, and are limited to things like Description Logic. LegalRuleML is not an example of either an ontology, or an ontology langauge. It is an interchange language for legal rule expressions, and it allows you to link parts of those expressions to elements in ontologies by IRI.
+
+An example of a legal ontology is 
+[LKIF Core](https://github.com/RinkeHoekstra/lkif-core), which defines concepts like legal role, process, place, time, etc., and is written in the OWL language.
+
+
+
