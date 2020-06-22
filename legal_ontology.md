@@ -8,28 +8,34 @@ tags:
 
 Model legal knowledge in an <ontology>.
 
-Say that you write a law that says
-
-> You have the obligation to pay taxes.
-
-Maybe you link your law to <wordnet> and make sure you have the right sense of "you", "have", "obligation", "pay" and "taxes". Now you can translate it into any other language that has a [linked WordNet](https://github.com/GrammaticalFramework/gf-wordnet#readme) with the same identifiers.
-
-Now you know that _obligation_ in the sense `06785951` 'a legal agreement specifying a payment or action and the penalty for failure to comply' is translated into Bulgarian as _обвързаност_.
-
-But this advanced NLP system has still no idea how _obligation_ relates to other concepts in the world. In a legal ontology, you can specify relations and rules like "if you are __obliged__ to do something, you are also __permitted__ to do it."
-Example from Mitrović et al. _[Modeling Legal Terminology in SUMO](https://www.researchgate.net/publication/338937692_Modeling_Legal_Terminology_in_SUMO)_
-
-    (=>
-      (modalAttribute ?FORMULA Obligation)
-      (modalAttribute ?FORMULA Permission))
-
-See also: <legalruleml>
-
-## Comment from Jason
-The above example is of a lexical ontology, not a legal one, just applied to a legal source material. A legal ontology does not "allow you to specify relations and rules". Ontological languages usually do not support the logical semantics required for legal rules, and are limited to things like Description Logic. LegalRuleML is not an example of either an ontology, or an ontology langauge. It is an interchange language for legal rule expressions, and it allows you to link parts of those expressions to elements in ontologies by IRI.
-
-An example of a legal ontology is 
+An example of a legal ontology is
 [LKIF Core](https://github.com/RinkeHoekstra/lkif-core), which defines concepts like legal role, process, place, time, etc., and is written in the OWL language.
 
+### Material
+Slides from ReMeP 2020's panel [Legal Ontologies: Why Are They Relevant In Practice?](https://www.remep.net/materials-2020/)
+
+### Possibly related
+[Lynx: Legal Knowledge Graph](http://www.lynx-project.eu/)
 
 
+## Not to be confused with
+
+#### A lexical ontology applied to a legal source material
+
+`grep "law" WordNet.txt > myLawWords.txt`
+
+This is not a legal ontology.
+
+
+#### Legal rules expressed in <legalruleml>
+LegalRuleML is not an example of either an ontology, or an ontology language. It is an interchange language for legal rule expressions, and it allows you to link parts of those expressions to elements in ontologies by IRI.
+
+## Jason's comment moved out of context
+
+> "Ontological languages usually do not support the logical semantics required for legal rules, and are limited to things like Description Logic."
+
+Can you clarify this?
+
+* This [Wikipedia page](https://en.wikipedia.org/wiki/Ontology_language#Classification_by_structure_(logic_type)) says that OWL is DL-based, and LKIF Core is written in OWL, is that a contradiction?
+* How about the languages that are based on first-order logic? The wikipedia page names Common Logic, CycL and KIF.
+* SUMO is written in KIF, and my example of axioms (which I moved to <ontology>) was from a paper called [Modeling Legal Terminology in SUMO](https://www.researchgate.net/publication/338937692_Modeling_Legal_Terminology_in_SUMO), so does that count? Or is it just that SUO-KIF (the language in which SUMO's axioms are written) is powerful enough to support legal _rules_, but in that paper they just chose to model legal _terminology_?

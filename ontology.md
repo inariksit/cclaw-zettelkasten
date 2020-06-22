@@ -30,6 +30,8 @@ The basic building block of an ontology is a hierarchy of concepts. Higher nodes
 
 Just a tree of arbitrary labels isn't particularly useful. That's why ontologies may have some of the following features.
 
+(TODO: is the distinction Individual vs. Class meaningful? Or does it depend on the ontology?)
+
 ### Relationships
 
 So far we've seen only taxonomy membership in a strict tree structure.
@@ -44,13 +46,8 @@ Furthermore, the relation links themselves can be the subject or object in anoth
 * Perform `is-a` Action
 * is-a `is-a` Relation
 
-See [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework), a data model based on such triples.
+See [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework), a data model based on such triples. ([OWL](https://en.wikipedia.org/wiki/Web_Ontology_Language) supports RDF-based syntax too.)
 
-### Axioms
-TODO
-
-### Mapping to logic
-TODO
 
 ### Mapping to lexical resources
 
@@ -72,19 +69,36 @@ Main point is that a concept in an ontology corresponds to one or more synonym s
 The concept `Measure` is mapped to a number of WordNet synonym sets, such as
 * _space_ 00014887 '3-dimensional expanse in which everything is located'
 * _time_ 15160774	'the fourth coordinate that is required (along with three spatial dimensions) to specify a physical event'
+* _length_ 05136466 'the linear extent in space from one end to the other'
+* …
 
-And `LengthMeasure` is mapped only to 00014887 _space_.
+And `LengthMeasure` is mapped only to 00014887 _space_ and 05136466 _length_.
+
+### Axioms
+Say that you want to reason about a piece of text that says
+
+> You have the obligation to pay taxes.
+
+In the previous step we linked an ontology to <wordnet>, so that our ontology nodes "obligation", "pay" and "taxes" map to the correct WordNet synsets. Now we can translate it into any other language that has a [linked WordNet](https://github.com/GrammaticalFramework/gf-wordnet#readme) with the same identifiers. The word _obligation_ is mapped to WordNet sense `06785951` 'a legal agreement specifying a payment or action and the penalty for failure to comply', and that in turn is translated into Bulgarian as _обвързаност_.
+
+But this advanced NLP system has still no idea how _obligation_ relates to other concepts in the world. To cover this, we can specify axioms like "if you are __obliged__ to do something, you are also __permitted__ to do it".
+Examples from Mitrović et al. _[Modeling Legal Terminology in SUMO](https://www.researchgate.net/publication/338937692_Modeling_Legal_Terminology_in_SUMO)_, using the SUO-KIF language ("Standard Upper Ontology Knowledge Interchange Format").
+
+    (=>
+      (modalAttribute ?FORMULA Obligation)
+      (modalAttribute ?FORMULA Permission))
 
 
-## Ontology extraction
+The arrow is only in one direction: permission doesn't imply obligation, but obligation implies permission. Below is a SUO-KIF statement for an equivalence: prohibition means no permission.
 
-Quote from [Herbelot, 2011](https://web.archive.org/web/20130704143830/http://www.peerpress.de/discoursecpp.pdf)
+    (<=>
+      (modalAttribute ?FORMULA Prohibition)
+      (not
+        (modalAttribute ?FORMULA Permission))
+      )
 
-> [O]ntology extraction — a subfield of natural language processing which, put simply, specialises in producing lists. […] Well-loved ontology extraction tasks include the retrieval of Oscar nominees, chemical reactions and dead presidents. In this kind of research, the machine is asked, for instance, to produce a list of things that are ‘like lorries’ and is expected to duly return (given the current state of the art)  
->
->    `truck car motorcycle plane engine hamster.`  
->
-> Because lorries have wheels and hamsters have too.
+Finally, we can map the axioms to a format that theorem provers understand and reason about the ontology. Examples and links to original sources in Enache (2010) [Reasoning and Language Generation in the SUMO Ontology](http://publications.lib.chalmers.se/records/fulltext/116606.pdf).
+
 
 ## Use of "Ontology" in Expert Systems
 
