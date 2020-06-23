@@ -1,7 +1,7 @@
 ---
 date: "2020-06-23"
 tags:
-  - rules as code
+  - rules_as_code
   - tools
   - todo
 ---

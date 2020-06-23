@@ -9,7 +9,7 @@ tags:
 
 Collection of concepts and their relationships, in a machine-readable format.
 
-<sumo> is a big, well-known general ontology.
+<sumo> is a big, well-known general ontology. (Most of the examples here are from SUMO, but the general concepts of taxonomy, relationships etc. aren't limited to SUMO.)
 
 ### Taxonomy
 
@@ -46,7 +46,11 @@ Furthermore, the relation links themselves can be the subject or object in anoth
 * Perform `is-a` Action
 * is-a `is-a` Relation
 
-See [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework), a data model based on such triples. ([OWL](https://en.wikipedia.org/wiki/Web_Ontology_Language) supports RDF-based syntax too.)
+See [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework), a data model based on subject--predicate--object triples.
+
+#### Axioms
+
+Depending on the language of the ontology, it may be possible to express more complex rules and relationships. For example, <sumo> is written in SUO-KIF which corresponds to first order logic. TODO: does the word __axiom__ mean the same in all ontologies, or is a <sumo> axiom different from an <owl> axiom?
 
 
 ### Mapping to lexical resources
@@ -74,31 +78,6 @@ The concept `Measure` is mapped to a number of WordNet synonym sets, such as
 
 And `LengthMeasure` is mapped only to 00014887 _space_ and 05136466 _length_.
 
-### Axioms
-Say that you want to reason about a piece of text that says
-
-> You have the obligation to pay taxes.
-
-In the previous step we linked an ontology to <wordnet>, so that our ontology nodes "obligation", "pay" and "taxes" map to the correct WordNet synsets. Now we can translate it into any other language that has a [linked WordNet](https://github.com/GrammaticalFramework/gf-wordnet#readme) with the same identifiers. The word _obligation_ is mapped to WordNet sense `06785951` 'a legal agreement specifying a payment or action and the penalty for failure to comply', and that in turn is translated into Bulgarian as _обвързаност_.
-
-But this advanced NLP system has still no idea how _obligation_ relates to other concepts in the world. To cover this, we can specify axioms like "if you are __obliged__ to do something, you are also __permitted__ to do it".
-Examples from Mitrović et al. _[Modeling Legal Terminology in SUMO](https://www.researchgate.net/publication/338937692_Modeling_Legal_Terminology_in_SUMO)_, using the SUO-KIF language ("Standard Upper Ontology Knowledge Interchange Format").
-
-    (=>
-      (modalAttribute ?FORMULA Obligation)
-      (modalAttribute ?FORMULA Permission))
-
-
-The arrow is only in one direction: permission doesn't imply obligation, but obligation implies permission. Below is a SUO-KIF statement for an equivalence: prohibition means no permission.
-
-    (<=>
-      (modalAttribute ?FORMULA Prohibition)
-      (not
-        (modalAttribute ?FORMULA Permission))
-      )
-
-Finally, we can map the axioms to a format that theorem provers understand and reason about the ontology. Examples and links to original sources in Enache (2010) [Reasoning and Language Generation in the SUMO Ontology](http://publications.lib.chalmers.se/records/fulltext/116606.pdf).
-
 
 ## Use of "Ontology" in Expert Systems
 
@@ -111,3 +90,7 @@ As an example, in Oracle Intelligent Advisor, the "Data" tab sets out objects, s
 "Rules" on the other hand, specify the implications arising from different conditions, and have a semantic meaning which is more complicated than can be expressed in the logic of ontology languages, which are usually based on Description Logic.
 
 In this sense "a person must pay taxes on their income" is a rule, but the fact that "a person has an income" is an ontological fact, which might be expressed as a class definition, and referred to as `person.income`.
+
+## Languages for writing ontologies
+
+<z:zettels?tag=language/ontology>

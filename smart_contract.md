@@ -13,6 +13,10 @@ Unlike traditional (financial) contract, a smart contract doesn't require third 
 - Written as code. This means that conditions can be automatically validated. "Did Alice pay Bob 50 dollars" is not up to negotiation, it can be checked automatically.
 - Distributed publicly in a decentralized system. This means that Bob can't just burn the contract after Alice has paid (or hack the server of a single provider that hosts the contract).
 
+### Languages for writing smart contracts
+
+<z:zettels?tag=language/smartcontract>
+
 ## Questions
 
 TODO: does smart contract always imply
