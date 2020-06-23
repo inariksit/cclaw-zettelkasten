@@ -2,7 +2,7 @@
 date: "2020-06-23"
 tags:
   - programming language
-  - expert system
+  - expert_system
   - todo
 ---
 

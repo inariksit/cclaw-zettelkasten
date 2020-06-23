@@ -12,10 +12,13 @@ _Contract_ means slightly different things in different fields. [Camilleri (2017
 <z:zettels?tag=contract&cf>
 
 
-### Software engineering
+### Contract in software engineering
 
-Quote Camilleri:
+A _contract_ encodes the specification of a software, using techniques such as assertions, pre- or postconditions, and refinement types.
 
-> Specification of software in terms of assertions and pre- and post-conditions.
+Examples:
+
+* [Liquid Haskell](https://ucsd-progsys.github.io/liquidhaskell-blog/)
+* [Dafny](https://www.microsoft.com/en-us/research/project/dafny-a-language-and-program-verifier-for-functional-correctness/)
 
 (Probably not relevant for the scope of CCLAW readings.)

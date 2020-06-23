@@ -8,9 +8,9 @@ tags:
 
 # Blawx
 
-[Blawx](https://www.blawx.com) is a visual develepment environment for a subset of 
+[Blawx](https://www.blawx.com) is a visual develepment environment for a subset of
 ErgoLite, which is the open source
-version of <ErgoAI_ErgoLite>, also known as Flora-2. It is aimed at creating an
+version of <ergoai_ergolite>, also known as Flora-2. It is aimed at creating an
 easy-to-learn interface for open-source declarative logic programming for use in
 Rules as Code.
 
@@ -18,7 +18,7 @@ It uses the Blockly library from google to create ErgoLite code, and offers an A
 to a ErgoLite reasoner online that accepts code and queries in the Blawx format,
 and data in JSON.
 
-It is integrated with <Docassemble> for use in expert systems through the
+It is integrated with <docassemble> for use in expert systems through the
 docassemble-blawx module.
 
 Jason wrote it.

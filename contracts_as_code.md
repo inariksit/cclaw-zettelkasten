@@ -8,7 +8,7 @@ tags:
 # Contracts as code
 
 Broad term that covers
-- <automatic_contract_processing> of legal_contracts
+- <automatic_contract_processing> of legal contracts
 - <smart_contract>
 
 ### Languages for writing contracts as code
@@ -19,7 +19,7 @@ Broad term that covers
 
 Documenting here what terms are used where. TODO make sense of the terminology.
 
-Used in Surden 2012 <computable_contracts>
+Used in <computable_contracts>
 - “computable contract(ing)”
 - “data-oriented contract(ing)”
 - “contract-as-data”
