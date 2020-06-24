@@ -13,9 +13,9 @@ tags:
 tool written by Jonathan Pyle, which is a lawyer and programmer in Philadelphia.
 
 Jonathan works in the non-profit civil legal aid sector in the United States, and built docassemble to help
-accellerate the process of generating interviews from document templates.
+accelerate the process of generating interviews from document templates.
 
-The basic intuition is this: if the document alread says...
+The basic intuition is this: if the document already says...
 
 ```
 <if the_client_is_seeking_damages> I seek damages in the amount of < damages_amount >. < end if >
@@ -33,16 +33,16 @@ question.
 The basic technical feature of Docassemble is that it catches undefined attribute errors, and instead of
 displaying them to the user, searches the interview file for a question or code block that will
 define that variable, pattern matching in a number of ways. If it finds a code block, (which is just
-raw Pythong written into the YAML file), it executes that Python code, and then tries again to execute
+raw Python written into the YAML file), it executes that Python code, and then tries again to execute
 the code it was running before. If it finds a question block, it displays that question to the user,
 collects the information (so the undefined attribute error won't happen the next time), and tries again.
 
 This is, in effect, a sort of backward chaining method (if it doesn't know the value of a variable, it
-looks for a way to "define" it, in the way that a logical reasoner looks for a way to "prove" it). And 
+looks for a way to "define" it, in the way that a logical reasoner looks for a way to "prove" it). And
 elements of forward chaining can be put into code blocks that are run each iteration, so that anything
 that can be calculated won't be sought.
 
-There are little ways in which the distinction shows up, particularly in how Python deals with disjuncions,
+There are little ways in which the distinction shows up, particularly in how Python deals with disjunctions,
 which is a left-to-right method.
 
 ```
@@ -87,7 +87,7 @@ system, it is also very extensible, and can be made to play nicely with others.
 
 For those who are comfortable with Python, one of Docassemble's biggest strengths is its ability to use
 arbitrarily complicated algebraic data types defined as Python objects using docassemble's custom list
-types, as well as the ability to use object references to create as complciated
+types, as well as the ability to use object references to create as complicated
 a representation of relevant facts as they like.
 
 ## Downsides
@@ -114,7 +114,7 @@ far less powerful.
 
 ## Rules as Code Integration
 
-<Blawx> has a module that can be used in a docassemble server to simplify the process of having the Blawx
+<blawx> has a module that can be used in a docassemble server to simplify the process of having the Blawx
 reasoner answer questions using Docassemble interview data and rules encoded in the Blawx tool.
 
 ## Smart Contract Integrations

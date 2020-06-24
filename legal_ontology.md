@@ -1,7 +1,7 @@
 ---
 date: "2020-06-17"
 tags:
-  - approach
+  - concept
 ---
 
 # Legal ontology

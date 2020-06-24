@@ -15,7 +15,7 @@ Unlike traditional (financial) contract, a smart contract doesn't require third 
 
 ### Languages for writing smart contracts
 
-<z:zettels?tag=language/smartcontract>
+<z:zettels?tag=language/smartcontract&cf>
 
 ## Questions
 
