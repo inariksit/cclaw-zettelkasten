@@ -49,9 +49,9 @@ That's the holy grail.
 
   This is the basic backward-chaining approach of expert systems. Given that I'm trying to determine X, what do I need to know next? With this capability in the reasoner, and a system that is capable of automatically generating interfaces on the basis of the data structures involved, and a previously-encoded law (RaC), you could create a functional expert system app by just posing a question in the legal knowledge language. That's the holy grail. The encoded legal question is the source code for the app.
 
-  ## The General/Application Specific Distinction
+## The General/Application Specific Distinction
 
-  Rules as Code is focused on encoding rules independent of the use to which that encoding will be put, so that the encoding can be re-used in different contexts. Application-specific code has to do with the specific problem that you are trying to solve using that encoding.
+Rules as Code is focused on encoding rules independent of the use to which that encoding will be put, so that the encoding can be re-used in different contexts. Application-specific code has to do with the specific problem that you are trying to solve using that encoding.
 
 For example, the general encoding might be the tax act, and the specific question might be "when is my filing deadline".
 
@@ -125,7 +125,7 @@ Accord project follows this architecture quite closely, but the developers were 
 
 ### DMN
 
-DMN uses FEEL as an expression language, along with decision-tables, and it seems to use POJO as a data structure, which is nice if you are coding in Java. It has search, but no explanation capabilities.
+DMN uses FEEL as an expression language, along with <decision_table>s, and it seems to use POJO as a data structure, which is nice if you are coding in Java. It has search, but no explanation capabilities.
 
 ## What Would Make L4 Awesome
 
