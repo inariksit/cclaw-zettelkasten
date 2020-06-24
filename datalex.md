@@ -36,3 +36,33 @@ deterioration or serious physical impairment AND
 the physician is of the opinion that the individual is unsuitable for admission
 to a facility other than as a formal patient
 ```
+
+## Upsides
+
+DataLex is an excellent example of the ability to have an interface automatically generated on
+the basis of the ontology being used inside the rules. It uses the natural language ways in
+which the propositions are expressed and pre-defined algebraic types like "PERSON" 
+to generate intuitive-sounding questions in a chat-bot interface.
+
+The rules are extremely readable, and it has features designed specifically for describing
+the legal provenance of a rule.
+
+Unlike many systems that use controlled natural language interfaces for expressing the code,
+DataLex is quite forgiving to beginners, because all syntactical symbols are in ALL CAPS.
+Everything between the symbols is just the name of a proposition. So it's a lot easier to
+write valid DataLex statements as a beginner, because so little of what you are writing has
+syntactical meaning.
+
+## Downsides
+
+The chat-bot interface is actually just a web-patina on 1980s style expert system technology.
+The logic used is propositional logic, not predicate logic, which limits
+the kinds of logical expressions that can be used. There is no defeasibility, no deontic
+modes, etc.
+
+While available for public use for free on the website, the code is owned by AustLII, and
+proprietary. 
+
+Having the GOAL defined as a tag on one of the RULES in the system violates the architectural
+premise that the application (the purpose to which the rules are being put) should be isolated
+from the rules.
