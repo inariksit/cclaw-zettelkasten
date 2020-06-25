@@ -41,3 +41,6 @@ rules if the input variables are listed in an optimal order.
 
 
 Related: <dmn_constraint_tables_extension>
+
+For implementation of DMN-related things, see Calvanese et al (2016)
+[Semantics and Analysis of DMN Decision Tables](https://arxiv.org/pdf/1603.07466.pdf).
