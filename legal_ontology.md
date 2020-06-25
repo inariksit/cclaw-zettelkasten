@@ -9,7 +9,7 @@ tags:
 Model legal knowledge in an <ontology>.
 
 An example of a legal ontology is
-[LKIF Core](https://github.com/RinkeHoekstra/lkif-core), which defines concepts like legal role, process, place, time, etc., and is written in the OWL language.
+[LKIF Core](https://github.com/RinkeHoekstra/lkif-core), which defines concepts like legal role, process, place, time, etc., and is written in the <owl> language.
 
 ### Material
 Slides from ReMeP 2020's panel [Legal Ontologies: Why Are They Relevant In Practice?](https://www.remep.net/materials-2020/)

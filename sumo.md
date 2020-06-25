@@ -6,7 +6,7 @@ tags:
 
 # SUMO
 
-SUMO (Suggested Upper-Merged Ontology) has the approach of _domain_ ontologies and _merge_ ontologies. Example:
+SUMO (Suggested Upper-Merged Ontology) has the approach of _domain_ ontologies and _upper_ ontologies. Example:
 
 * Top level
 ```
@@ -32,15 +32,36 @@ TODO: I don't know how the linking works in practice, or if the technical detail
 
 ## SUO-KIF
 
-SUMO is written in SUO-KIF, which has the expressive power of first-order logic.
+SUMO is written in SUO-KIF. Unlike most ontology languages, SUO-KIF is not a description logic.
 
-TODO: terminology confusion: Pease (2009) [Standard Upper Ontology Knowledge Interchange Format](http://ontolog.cim3.net/file/resource/reference/SIGMA-kee/suo-kif.pdf) calls these just Statements and Rules. In other sources I see both called axioms. Example formulations from Enache (2010) [Reasoning and Language Generation in the SUMO Ontology](http://publications.lib.chalmers.se/records/fulltext/116606.pdf):
-> […] axioms that specify the behaviour of relations and the connections between various concepts.
-> Regarding the SUMO axioms, they are of two kinds: simple and quantified formulas.
+### Expressivity
+
+_Quote from Mitrović et al. (2019) [Modeling Legal Terminology in SUMO](https://www.researchgate.net/publication/338937692_Modeling_Legal_Terminology_in_SUMO)_
+
+> The existing SUMO model has most of the elements needed for a legal framework. It is implemented in a higher-order language, which, unlike a description logic or even first-order logic, allows us to use entire formulas as arguments to relations.
+
+SUMO is also translated into OWL: [http://www.adampease.org/OP/SUMO.owl](http://www.adampease.org/OP/SUMO.owl).
+
+## Terms
+(_TODO: terminology overview, how does **term** in SUMO correspond to other ontologies and other words like **concept** etc?_)
+
+The basic building blocks of SUMO (and other ontologies). All of the `CamelCased` thingies in the examples above are terms (`Entity`, `AirportsFromAtoK`, `Heathrow`, …).
+
+If you [browse SUMO online](http://sigma.ontologyportal.org:8080/sigma/Browse.jsp?kb=SUMO&lang=EnglishLanguage), you need to type the term in the text box where it says **KB Term**.
+
+SUO-KIF is untyped, so there is no formal difference what kind of role the terms may take.
+
+- Class, like `AirportsFromAtoK`, `DeonticAttribute`
+- Individual, like `Heathrow`
+- Predicate, like `occupiesPosition`, `instance`. More about predicates after Axioms are introduced.
 
 
-### Statements (or "simple formulas")
-Example from Pease (2009) [Standard Upper Ontology Knowledge Interchange Format](http://ontolog.cim3.net/file/resource/reference/SIGMA-kee/suo-kif.pdf)
+
+## Axioms
+Pease (2009) [Standard Upper Ontology Knowledge Interchange Format](http://ontolog.cim3.net/file/resource/reference/SIGMA-kee/suo-kif.pdf) calls these just Statements and Rules. In other sources I see both called axioms[^1].
+
+#### Statements (or "simple formulas")
+_Example from Pease (2009) [Standard Upper Ontology Knowledge Interchange Format](http://ontolog.cim3.net/file/resource/reference/SIGMA-kee/suo-kif.pdf)_
 
 “Kofi Annan is a human and he occupies the position of Secretary General at the United Nations.”
 
@@ -53,7 +74,8 @@ Example from Pease (2009) [Standard Upper Ontology Knowledge Interchange Format]
     (not
       (occupiesPosition SilvioBerlusconi President Libya))
 
-### Rules (or "quantified formulas")
+#### Rules (or "quantified formulas")
+_Example from Pease (2009) [Standard Upper Ontology Knowledge Interchange Format](http://ontolog.cim3.net/file/resource/reference/SIGMA-kee/suo-kif.pdf)_
 
 “If a person is sleeping he or she cannot perform an intentional action”.
 
@@ -67,20 +89,40 @@ Example from Pease (2009) [Standard Upper Ontology Knowledge Interchange Format]
             (overlaps ?ACT ?SL)
             (agent ?ACT ?P)))))
 
-### Predicates
+## Predicate
 
-Examples from from Enache (2010) [Reasoning and Language Generation in the SUMO Ontology](http://publications.lib.chalmers.se/records/fulltext/116606.pdf)
+_Examples from from Enache (2010) [Reasoning and Language Generation in the SUMO Ontology](http://publications.lib.chalmers.se/records/fulltext/116606.pdf)_
 
-Predicates like `occupiesPosition` and `instance` are also part of the stuff that SUMO is built of.
+As mentioned in Terms, predicates like `occupiesPosition` and `instance` are also part of the stuff that SUMO is built of. What is an instance?
 
     (instance instance BinaryPredicate)
 
-Furthermore, it's possible to specify the types of the arguments of a predicate. The following example limits the arguments of the predicate `address`.
+Just like any terms, predicates and functions can be nicely placed in a hierarchy.
+
+                         Relation
+                      /  |  |  |  \
+                    /    …  …  …   \
+            SingleValuedRelation …  Predicate
+                   /                / … … … \
+               Function      BinaryPredicate QuaternaryPredicate
+              /   |  | | \
+             /   …  …  …  \
+          UnaryFunction … QuintaryFunction
+
+Furthermore, it's possible to specify the types of the arguments of a predicate, using the predicate `domain`. The following example limits the arguments of the predicate `address`.
 
     (instance address BinaryPredicate)
     (domain address 1 Agent)
     (domain address 2 Address)
 
+And of course, the use of `domain` [is defined by using `domain`](http://sigma.ontologyportal.org:8080/sigma/TreeView.jsp?lang=EnglishLanguage&simple=yes&kb=SUMO&term=domain)
+
+    (instance domain TernaryPredicate)
+    (domain domain 1 Relation)
+    (domain domain 2 PositiveInteger)
+    (domain domain 3 SetOrClass)
+
+<!--
 More complicated example (higher-order function):
 
     (=> (and
@@ -94,26 +136,10 @@ Enache explains:
 
 > […] CaseRole is a kind of binary predicate, so the meaning of the axioms is applying the function to an instance of the first argument which is a type and the second argument, which is an instance already. A possible interpretation of the capability function would be the ability / possibility to perform a certain
 action. This interpretation would require a modal logic system, and a specific modality operator.
-
-### Functions
-
-TODO: what is the difference of predicate and function in SUMO?
-
-- It seems like functions are like predicates but they are written with uppercase letters, like classes and instances. E.g. `(instance MultiplicationFn CommutativeFunction)`
-
-- In Enache (2010) page 18, there's a Hierarchy of Relations, which goes like
-
-                     Relation
-                  /  |  |  |  \
-                /    …  …  …   \
-        SingleValuedRelation …  Predicate
-               /                / … … … \
-           Function      BinaryPredicate QuaternaryPredicate
-          /   |  | | \
-         /   …  …  …  \
-      UnaryFunction … QuintaryFunction
-
+-->
 ## Type system
+
+Or rather lack of one. It seemed to cause some problems when translating SUMO to GF.
 
 Quotes from Enache (2010) [Reasoning and Language Generation in the SUMO Ontology](http://publications.lib.chalmers.se/records/fulltext/116606.pdf)
 
@@ -129,3 +155,6 @@ I'm confused about types, instances, classes, predicates, functions and all that
 >      (subclass ReligiousFigure Celebrity)
 >      (instance Celebrity SocialRole)
 > This is an example of bad design of the ontology that should be overcome in the translation to GF, as it is not possible in a type system that something could be both a type and an instance of a type.
+
+
+[^1]: Example formulations from Enache (2010) [Reasoning and Language Generation in the SUMO Ontology](http://publications.lib.chalmers.se/records/fulltext/116606.pdf):   "[…] Axioms that specify the behaviour of relations and the connections between various concepts."; "SUMO axioms […] are of two kinds: simple and quantified formulas."
