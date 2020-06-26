@@ -6,7 +6,7 @@ tags:
 
 # SUMO
 
-SUMO (Suggested Upper-Merged Ontology) has the approach of _domain_ ontologies and _upper_ ontologies. Example:
+SUMO (Suggested Upper-Merged Ontology) has the approach of _domain_ ontologies and an _upper_ ontology. Example:
 
 * Top level
 ```
@@ -43,7 +43,7 @@ _Quote from Mitrović et al. (2019) [Modeling Legal Terminology in SUMO](https:/
 SUMO is also translated into OWL: [http://www.adampease.org/OP/SUMO.owl](http://www.adampease.org/OP/SUMO.owl).
 
 ## Terms
-(_TODO: terminology overview, how does **term** in SUMO correspond to other ontologies and other words like **concept** etc?_)
+(_TODO: terminology overview, does **term** in SUMO correspond to **concept** in e.g. Cyc and DOLCE, or is there a difference?_)
 
 The basic building blocks of SUMO (and other ontologies). All of the `CamelCased` thingies in the examples above are terms (`Entity`, `AirportsFromAtoK`, `Heathrow`, …).
 
