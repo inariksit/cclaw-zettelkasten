@@ -25,6 +25,8 @@ even be a way for the user to specify the type of vehicle, because the inputs
 will be rerstricted, so the automated system can't even learn the things that it
 would need to know in order to recognize that it was badly designed.
 
+(For a longer discussion, see [No Vehicles in the Park](https://digitalcommons.law.seattleu.edu/cgi/viewcontent.cgi?article=1623&context=sulr).)
+
 ### Mitigations
 * Susskind suggested limiting the users of <legal_expert_systems> to lawyers, so that
   they ought to know themselves if the answers are strange, or relevant
