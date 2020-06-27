@@ -16,9 +16,10 @@ jobs:
         # Only needed for private caches
         # authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
     # This builds neuron, as well as run tests
-    - run: nix-env -if "https://github.com/srid/neuron/archive/736107f8dd12ed514b6956c9e938437b5bd5fa49.tar.gz"
+    - run: nix-env -if "https://github.com/srid/neuron/archive/master.tar.gz"
     # - name: Debug Action
     #   uses: hmarr/debug-action@v1.0.0
+    - run: /nix/var/nix/profiles/default/bin/nix-store -qR $(which neuron)
     - name: Build site
       run: neuron -d . rib
     # - name: push
