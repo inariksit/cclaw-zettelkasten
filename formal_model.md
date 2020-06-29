@@ -26,3 +26,5 @@ To make it easier to test/reason about {contracts,programs}, we can build a _mod
 See the following list for languages that have an entry in this zettelkasten. TODO: add a tag "language/formal" and only link to them.
 
  <z:zettels?tag=language/**&cf>
+- Haeusler et al. (2010) [Intuitionistic ALC (iALC)](http://arademaker.github.io/files/loait2010-article.pdf)  
+  Explanation: [ALC](https://en.wikipedia.org/wiki/Description_logic#The_description_logic_ALC) is one of the core Description Logics. ALC is extended with intuitionistic logic, because _"Classical negation forces the negation of a proposition to be part of a concept, but in the context of “the law” the negation of a valid law does not have to be valid either. Besides the ontological complexity of dealing with legal statements together with non-legal ones by defining concepts that are outside jurisprudence, Classical negation can lead to unnecessary incoherent situations […]"_
