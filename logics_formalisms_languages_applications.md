@@ -25,7 +25,7 @@ and you follow the derivation rules, you can generate new
 statements that you can be confident are also true.
 
 There are a lot of different logics out there, each with their own sets of rules that
-you can use to generate new knowledge from the knowledge you already have. They 
+you can use to generate new knowledge from the knowledge you already have. They
 are designed for different functions, and some of them
 are designed specifically for computation, like lambda calculus.
 
@@ -45,6 +45,11 @@ the logic implemented by the programming langauge may be something more like
 predicate logic, or modal logic,
 or defeasible logic, and the computations get described as sets of rules,
 or a set of rules with modes, or a set of rules and exceptions to those rules.
+
+(See the following list for languages that have an entry in this zettelkasten.)
+
+ <z:zettels?tag=language/**>
+
 
 ## What is a "Formalism"?
 
