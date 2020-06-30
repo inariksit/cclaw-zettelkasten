@@ -11,10 +11,6 @@ Broad term that covers
 - <automatic_contract_processing> of legal contracts
 - <smart_contract>
 
-### Languages for writing contracts as code
-- <daml>
-
-
 ### Terminology
 
 Documenting here what terms are used where. TODO make sense of the terminology.

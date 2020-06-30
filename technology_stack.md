@@ -125,7 +125,7 @@ Accord project follows this architecture quite closely, but the developers were 
 
 ### DMN
 
-DMN uses FEEL as an expression language, along with <decision_table>s, and it seems to use POJO as a data structure, which is nice if you are coding in Java. It has search, but no explanation capabilities.
+<dmn> uses FEEL as an expression language, along with <decision_table>s, and it seems to use POJO as a data structure, which is nice if you are coding in Java. It has search, but no explanation capabilities.
 
 ## What Would Make L4 Awesome
 

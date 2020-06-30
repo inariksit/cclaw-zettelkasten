@@ -14,7 +14,7 @@ contract to be executed automatically, or to allow
 analysis of the contract.
 
 "Smart contracts" are often mistakenly conflated with contracts that
-use blockchain to record information and exchange currency. See <smart_contracts_and_blockchain>.
+use blockchain to record information and exchange currency. See <blockchain_and_smart_contracts>.
 
 Any type of contract can be a smart contract.
 
@@ -35,7 +35,7 @@ expressed both in code and in natural language text that is intended to
 convey the same meaning.
 
 For example, the Clause.io system allows you to drag and
-drop pree-written paragraphs of text into an agreement,
+drop pre-written paragraphs of text into an agreement,
 each having an associated block of code that can be used
 to automate the same intent.
 

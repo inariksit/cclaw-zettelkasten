@@ -11,7 +11,7 @@ tags:
 A decision table is a way of recording what inputs should result in what
 outputs for a given rule, function, or equivalent.
 
-They are used in the DMN standard, as well as in Oracle Intelligent Advisor.
+They are used in the <dmn> standard, as well as in <oracle_intelligent_advisor>.
 
 They consist of a set of either rows or columns that represent inputs, and
 another set that represent outputs. Depending on the formalism, `-` can be
@@ -35,12 +35,6 @@ technical users. Just read the rows, top to bottom, left to right (assuming
 a horizontal orientation for the table). If all the inputs match your
 scenario, the outputs listed are true.
 
-Decision tables are used in non-automted contexts because they can be faster
+Decision tables are used in non-automated contexts because they can be faster
 for a human being to navigate than an equivalent decision-tree or set of
 rules if the input variables are listed in an optimal order.
-
-
-Related: <dmn_constraint_tables_extension>
-
-For implementation of DMN-related things, see Calvanese et al (2016)
-[Semantics and Analysis of DMN Decision Tables](https://arxiv.org/pdf/1603.07466.pdf).
