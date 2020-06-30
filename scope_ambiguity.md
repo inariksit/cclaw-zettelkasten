@@ -1,5 +1,7 @@
 ---
 date: "2020-06-15"
+tags:
+  - natural_language
 ---
 
 # Scope ambiguity

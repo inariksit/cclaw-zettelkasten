@@ -1,5 +1,7 @@
 ---
 date: "2020-06-16"
+tags:
+  - natural_language
 ---
 
 # Advantages of imprecision

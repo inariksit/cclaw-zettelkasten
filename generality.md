@@ -1,7 +1,7 @@
 ---
 date: "2020-06-16"
 tags:
-  - concept
+  - natural_language
 ---
 
 # Generality
