@@ -5,11 +5,13 @@ This is a Zettelkasten for the reading list of [CCLAW@SMU](https://github.com/sm
 Contributions to this zettelkasten are welcome.
 This is not an official document, it's just learning notes of individual persons who are learning about the different aspects of computational law. So it is very likely that some of the zettels contain mistakes. (If you notice one, consider correcting it or leaving a note!)
 
-## Problems in the current state of the art
+## Problems in traditional legal drafting
+
+(where "traditional" = humans draft in natural language.)
 
 ### Natural language is imprecise
 
-Humans draft in natural language. They tolerate lot of things that computers wouldn't, such as:
+Humans and natural language tolerate lot of things that computers wouldn't, such as:
 
 * Incomplete information
 * Semantic ambiguity, vagueness
