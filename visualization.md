@@ -12,6 +12,7 @@ Visual representations of legal text, in order to make it easier for humans to r
 
 - [C-O diagrams](http://www.cse.chalmers.se/~gersch/scc2010.pdf)
 - Diagram notation in <normalized_legal_drafting_query_method>
+- Graphs generated from licenses at [Licentia](http://licentia.inria.fr/visualize/licAPACHE)
 
 ### Formatting
 
