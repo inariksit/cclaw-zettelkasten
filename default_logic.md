@@ -56,6 +56,16 @@ Then again, in real life you don't get a `Nothing` if you don't know whether you
 
 So here we add the property of flexible reordering of the rule weights. Maybe this would be more elegantly formulated as a data type, or something like a typeclass. (TODO: sketch this in Haskell.)
 
+### Meng's take
+
+Suppose we have a simple function `f1 :: a -> b -> Bool`. Suppose we have only `a` and do not yet know `b`. We call `f1 a` and get back a partially applied `f1' :: b -> Bool`. In English, we would say “the answer is: it depends”.
+
+Let’s call those semantics Classical Haskell. In the Classical Haskell monad `m`, we have a function `f2 :: m (a -> b -> c) -> m a -> m b -> m c`.
+And calling `f2 (m a)` gives `f2' :: m b -> m c`. So that’s basically `ap`.
+
+But in the Defeasible Monad `n`, a function `f3 :: n (a -> b -> c) -> n a -> n b -> n c` allows you to say `f3 (n a)` gives `f3' :: n c` because who has time to wait for `b`?
+We’re too busy! Life is too short! `n` lifts every `a`, `b`, `c` to `HasDefault a`, `HasDefault b`, `HasDefault c` and if `f3` isn’t given `n b` then it just runs a `fromMaybe b` and carries on! If it turns out that the value of `n b` is actually not the default `fromMaybe b` then throw a runtime exception, we’ll fix it in court! Or we’ll say, run the function again with `f3 (n a) (n b)` and we’ll get a different `n c` result, but to cover up our embarrassment at being found out as guilty of jumping to conclusions, we’ll just call it non-monotonic reasoning!
+
 ## Examples in real world
 
 - <catala> is based on default logic.
