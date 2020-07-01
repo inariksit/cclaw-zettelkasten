@@ -66,6 +66,10 @@ And calling `f2 (m a)` gives `f2' :: m b -> m c`. So that’s basically `ap`.
 But in the Defeasible Monad `n`, a function `f3 :: n (a -> b -> c) -> n a -> n b -> n c` allows you to say `f3 (n a)` gives `f3' :: n c` because who has time to wait for `b`?
 We’re too busy! Life is too short! `n` lifts every `a`, `b`, `c` to `HasDefault a`, `HasDefault b`, `HasDefault c` and if `f3` isn’t given `n b` then it just runs a `fromMaybe b` and carries on! If it turns out that the value of `n b` is actually not the default `fromMaybe b` then throw a runtime exception, we’ll fix it in court! Or we’ll say, run the function again with `f3 (n a) (n b)` and we’ll get a different `n c` result, but to cover up our embarrassment at being found out as guilty of jumping to conclusions, we’ll just call it non-monotonic reasoning!
 
+---
+
+As Lawsky says, default logics can be interpreted into classical logics; the apparent contradiction between rule fragments can be resolved when they are composed into complete rules; just as the `if/elsif/else` construct is a way of composing multiple rule fragments into a single coherent rule, a `default/unless/exception` construct can be equally treated as different syntax for the same thing. In that case, what is the usefulness of default logic to us? The syntax thing is a red herring. The value of default logic is good-old reasoning under uncertainty: being able to `fromMaybe` a default value to an unknown; and being able to prioritize conflicting rules, so that a resolution always proceeds deterministically.
+
 ## Examples in real world
 
 - <catala> is based on default logic.
