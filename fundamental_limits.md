@@ -1,7 +1,7 @@
 ---
 date: "2020-06-17"
 tags:
-  - Legal Issues
+  - legal_issues
 ---
 
 # Fundamental Limits on Automation of Legal Reasoning
