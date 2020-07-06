@@ -2,9 +2,12 @@
 date: "2020-07-06"
 tags:
   - Rules_as_Code
+  - todo
 ---
 
 # LEOS
+
+Todo: Tags?
 
 [LEOS (Legislative Editing Open Software)](https://joinup.ec.europa.eu/solution/leos-open-source-software-editing-legislation) is the open source version
 of a piece of software developed for use inside the European Union for drafting software, called "EdiT" (), which is intended to work as a replacement
