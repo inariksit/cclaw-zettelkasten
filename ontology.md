@@ -29,7 +29,6 @@ Ontologies are relevant in at least:
 
   > “for understanding how terms acquire different meanings __(which postulate different ontologies)__, we need to refer to cognitive science, i.e., to the basic architecture through which humans conceptualise the world according to their basic concerns. Cognitive science can provide the foundation for the most abstract ontological concepts.”
 
-
 ## Taxonomy
 
 The basic building block of an ontology is a hierarchy of concepts (or "terms"). Higher nodes represent general concepts, lower nodes more specific. For example, see the trees below. (Made up

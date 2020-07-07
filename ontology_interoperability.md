@@ -7,7 +7,21 @@ tags:
 
 # Interoperability between ontologies
 
-There are many different ontologies.
+Ontologies can differ in several axes. The following are from _Approaches to Legal Ontologies_:
+
+#### Building methods 
+bottom up vs. top down approach -- TODO definition
+
+#### Levels of formalisation 
+lightweight vs. heavyweight ontologies -- TODO definition
+
+#### Granularity 
+how specific things to express: "furniture" or "armchair" -- TODO check if this is the definition or did I misinterpret
+
+
+
+Furthermore, there are many different ontologies. Here are approaches for interoperability between them.
+
 
 ## Domain ontology vs. upper ontology
 
@@ -35,8 +49,61 @@ In the following picture, the domain ontologies of Neurology and Airports are co
 
 ## "The multi-layered legal information perspective"
 
-TODO: describe the approach by Boella and Rossi (2010)
+According toBoella and Rossi, it is difficult to create ontologies that work for legal rules
+independent of time and place. Law is a combination of legal texts and their interpretation and
+implementation in different jurisdictions.
 
-> “A modular model of legal knowledge is thus proposed, which relies on the following layers: lightweight ontologies at the first layer, service ontologies at the second layer, an intermediate layer converting service concepts into domain concepts, and finally the fourth layer constituted by the core ontology. The model is illustrated through the research undertaken in the framework of the ICT4LAW project. Ontologies play a pivotal role in the project, since they enable the mapping between norms and the organisation’s internal processes and regulations.”
+> law is always fragmented in several conceptual frameworks
+> with different features and objectives. And these conceptual frameworks may change
+> according to time and events in the practice of law.
+
+> It is precisely because law is inherently multilevel, that we need to maintain several levels in the
+> ontological structure in order to explain the different aspects of law.
+
+So they propose a modular model with 4 levels.
+
+### Level 1
+Lightweight ontologies
+> foundational ontologies to the particularities of the legal domain.
+
+### Level 2
+Service ontologies
+
+### Level 3
+Intermediate between L1 and L2
+
+### Level 4
+Core ontology
+
+
+> core ontology of law that can clarify the fundamentals of law. 
+
+> Among the most well-known core ontologies, FOLaw (Functional Ontology of Law) (Valente 1995), 
+> LRI-Core (Breuker and Winckels 2003), 
+> CLO (Core Legal Ontology) (Gangemi et al. 2003) may be mentioned
+
 
 _“Approaches to Legal Ontologies: Theories, Domains, Methodologies: 1 (Law, Governance and Technology Series)”._
+
+
+
+<!--In the model we propose, lightweight ontologies are normally built, reviewed, and
+maintained by several types of knowledge experts, according to the expertise of different
+legal systems or domain experts. This constitutes the first layer (L1) that represents
+information about legal content as interpreted at a certain time by a certain community of
+experts. In our current project Legal Taxonomy Syllabus (Rossi and Vogel 2004; Ajani et
+al. 2007, 2010) we have lightweight ontologies of European different legal vocabulary and
+concepts (EU and five national jurisdictions) related to specific domains, such as
+consumer law. L1 allows multiple representations of the same domains, according to
+several extensional ontologies obtained by the legal literature.
+The second layer (L2) is constituted by service ontologies, enabling the definition of roles
+and behaviours for agents in charge of executing tasks related to the specific domains
+considered by L1.
+The third layer (L3) is devoted to link L1–L2, allowing to convert service concepts into/from
+domain concept ones, through a refinement in terms of ontological relations. The fourth
+layer (L4) is constituted by the state of art in core concepts ontology, but it is constantly
+enriched by the results of intensional semantics derived from the outcomes of the
+procedural model (L1–L3) applied to numerous legal systems and domains. The L4 is
+based on a set of orthogonal concepts that provide a basis for defining the legal process
+in a more complex way, independently from single applications.
+-->
