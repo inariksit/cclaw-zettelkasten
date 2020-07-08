@@ -7,21 +7,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: cachix/install-nix-action@v8
-    # This also runs nix-build.
-    - uses: cachix/cachix-action@v6
-      with:
-        name: srid
-        # signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
-        # Only needed for private caches
-        # authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-    # This builds neuron, as well as run tests
-    - run: nix-env -if "https://github.com/srid/neuron/archive/master.tar.gz"
-    # - name: Debug Action
-    #   uses: hmarr/debug-action@v1.0.0
-    - run: /nix/var/nix/profiles/default/bin/nix-store -qR $(which neuron)
+    # - uses: cachix/install-nix-action@v8
+    # # - run: gunzip < neuron-full-closure.export.gz | nix-store --import
+    # # - name: Build site
+    # #   run: /nix/store/pz08vmgv1y1vlvx0jfjwdwjvhs06246d-neuron-0.5.5.1/bin/neuron -d . rib
+
+    # # # This also runs nix-build.
+    # - uses: cachix/cachix-action@v6
+    #   with:
+    #     name: srid
+    #     # signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
+    #     # Only needed for private caches
+    #     # authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
+    # # This builds neuron, as well as run tests
+    # - run: nix-env -if "https://github.com/srid/neuron/archive/master.tar.gz"
+    # # - name: Debug Action
+    # #   uses: hmarr/debug-action@v1.0.0
+    # - run: /nix/var/nix/profiles/default/bin/nix-store -qR $(which neuron)
+    - name: Download neuron
+      run: |
+        curl --silent https://api.github.com/repos/srid/neuron/actions/artifacts | jq 'first(.artifacts | .[] | select(.name == "neuron-bundle-linux") | .archive_download_url)' -r | xargs curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" --silent -L -o neuron-bundle-linux.zip
+        unzip neuron-bundle-linux.zip
+        chmod +x neuron
     - name: Build site
-      run: neuron -d . rib
+      run: |
+        # ./neuron --version
+        ./neuron -d $PWD rib
     # - name: push
     #   uses: github-actions-x/commit@master
     #   with:
@@ -29,9 +40,17 @@ jobs:
     #     push_branch: 'master'
     #     add: ...
     #     commit_message: 'publish'
+    # - run: git status
+    # - name: Deploy to GitHub Pages 🚀
+    #   uses: JamesIves/github-pages-deploy-action@3.5.6
+    #   with:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #     BRANCH: gh-pages
+    #     FOLDER: .neuron/output
+    # - run: git status
+
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: .neuron/output/
-    - run: git status
