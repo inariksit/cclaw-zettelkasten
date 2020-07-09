@@ -29,9 +29,9 @@ jobs:
         curl --silent https://api.github.com/repos/srid/neuron/actions/artifacts | jq 'first(.artifacts | .[] | select(.name == "neuron-bundle-linux") | .archive_download_url)' -r | xargs curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" --silent -L -o neuron-bundle-linux.zip
         unzip neuron-bundle-linux.zip
         chmod +x neuron
+        ./neuron --version
     - name: Build site
       run: |
-        # ./neuron --version
         ./neuron -d $PWD rib
     # - name: push
     #   uses: github-actions-x/commit@master
