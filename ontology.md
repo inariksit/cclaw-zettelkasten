@@ -10,6 +10,16 @@ tags:
 
 Collection of concepts and their relationships, in a machine-readable format.
 
+This zettel is really long, because I'm reading way too many papers about ontologies. Here's TL;DR.
+
+Ontology has:
+* _Taxonomy_ as a backbone (cat is an animal, animal is a living-entity, …)
+
+It may also have one of the following
+* Other, non-hierarchical _relations_ (cats are cute)
+* _Rules/axioms_ to derive facts that are not explicitly encoded by the ontology (motherhood is a special case of parenthood; Mary is John's mother -> Mary is John's parent)
+
+
 ## Origins and etymology
 
 _Quotes from "Approaches to Legal Ontologies: Theories, Domains, Methodologies: 1 (Law, Governance and Technology Series)"_ 
@@ -31,7 +41,7 @@ Ontologies are relevant in at least:
 
 ## Taxonomy
 
-The basic building block of an ontology is a hierarchy of concepts (or "terms"). Higher nodes represent general concepts, lower nodes more specific. For example, see the trees below. (Made up
+The basic building block of an ontology is a hierarchy of concepts (or "terms"). Higher nodes represent general concepts, lower nodes more specific. For example, see the trees below.
 
 ```
          Furniture
