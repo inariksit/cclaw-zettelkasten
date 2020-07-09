@@ -58,13 +58,16 @@ In the following picture, the domain ontologies of Neurology and Airports are co
 
 ## Conceptual vs. lexical ontologies
 
-<wordnet> is sometimes called a "lexical ontology". Its material is words, and the relations are particularly relevant for words. They include 
+<wordnet> is sometimes called a "__lexical__ ontology". Its material is words, and the relations are particularly relevant for words. They include 
 synonymy (_big, large_);
 antonymy (_big, small_); 
 hyponymy and hypernymy (_chair, furniture_);
 meronymy and holonymy (_chair, legs_); and more linguistic things like derivation (_bank, banker_).
 
-This is in contrast with ontologies that try to model the world, or humans' conceptual understanding of the world. Both levels can be present in an ontology, with an intermediate layer between them.
+This is in contrast with ontologies that try to model the world, or humans' __conceptual__ understanding of the world. 
+
+In a simple model, words are the linguistic realisation of a concept, and hence words are automatically present in a conceptual ontology.
+In a multilayer model, the conceptual and the lexical levels are both present in an ontology, with an intermediate layer (or several) between them.
 
 ### Biasiotti and Tiscornia (2010): Linguistic perspectives on legal ontologies
 
@@ -94,7 +97,7 @@ Another example is Ajani et al. (2009) [Legal Taxonomy Syllabus](https://www.res
 
 
 
-## Boella and Rossi (2010): The multi-layered legal information perspective
+### Boella and Rossi (2010): The multi-layered legal information perspective
 
 
 <!--
