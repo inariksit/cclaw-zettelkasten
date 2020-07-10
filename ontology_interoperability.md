@@ -20,7 +20,7 @@ In contrast, __top-down__ starts from conceptual models. First come up with an [
 <!-- > core legal ontologies, usually built top-down with the goal of representing intensional descriptions of legal concepts as classes for guiding the interpretation of the world and explaining common sense reasoning. -->
 
 #### Levels of formalisation 
-If an ontology is just a collection of concepts, it can be called __lightweight__. (Technically, a completely flat lexicon is a lightweight ontology.) 
+A __lightweight__ ontology is not much more than a collection of concepts: little hierarchy, few axioms. (Technically, a completely flat lexicon is a lightweight ontology.) 
 
 In contrast, __heavyweight__ (or more __formal__) ontologies have more structure. [Biasiotti and Tiscornia (2010)](https://link.springer.com/chapter/10.1007/978-94-007-0120-5_9) describe as follows: _"Formal ontologies are composed of a relatively small set of concepts, defined by a high number of constraints which encode the relations between individuals of classes through cardinality restrictions, property range and domain, disjointness, transitive and symmetric properties."_
 
@@ -53,7 +53,31 @@ In the following picture, the domain ontologies of Neurology and Airports are co
     Optic nerve          Heathrow airport
 
 
-<sumo> is a big, well-known upper ontology. Other big ones (in 2007) are listed in [Mascardi et al](http://personales.upv.es/prosso/resources/MascardiEtAl_WOA07.pdf). [Wikipedia](https://en.wikipedia.org/wiki/Upper_ontology#Available_upper_ontologies) has a more up-to-date list. (Heuristic of relevance: does the ontology have its own Wikipedia page.) Wikipedia remarks _"Note that the lack of fresh releases does not imply inactivity or uselessness." This is true especially for an upper ontology. The purpose is to be compact, and that kind of information doesn't need to be updated.
+<sumo> is a big, well-known upper ontology. [Mascardi et al.](http://personales.upv.es/prosso/resources/MascardiEtAl_WOA07.pdf) list other big ones (in 2007). [Wikipedia](https://en.wikipedia.org/wiki/Upper_ontology#Available_upper_ontologies) has a more up-to-date list.[^3]
+
+### Core ontologies for law
+
+[Biasiotti and Tiscornia (2010)](https://link.springer.com/chapter/10.1007/978-94-007-0120-5_9) describe legal core ontologies:
+
+> Core ontologies are normally built on the knowledge elicited from legal experts and
+> include the formalisation of basic concepts with which legal theory commonly agrees.
+> In their specialisations in domain ontologies, the choice about the levels of generalisation is
+> left to the developers; it mainly depends on the kind of applications and the results one
+> expects to achieve, as they are expected to support classification, reasoning and the
+> decision making process.
+
+This seems to me (Inari) that legal core ontology has the role of upper ontology in general. Few concepts, lot of axioms.
+
+Examples of legal core ontologies:
+* FOLaw (Functional Ontology of Law), Valente, A. (1995) _"is addressed to describing the
+epistemological aspects of law as a control system of social behaviours."_
+* LRI-Core (Breuker and Winckels 2003), 
+* CLO (Core Legal Ontology) (Gangemi et al. 2003) _"organises legal concepts
+and relations on the basis of formal properties defined in the DOLCE+ foundational
+ontology library (Masolo et al. 2002)"_
+* [LKIF-Core](https://github.com/RinkeHoekstra/lkif-core#readme) (Hoekstra et al. 2007) _"is a modular collection of basic legal concepts aimed at supporting the implementation of rule-based knowledge bases for regulatory decision support systems."_
+
+Might be relevant to read/skim Breuker & Hoekstra [Epistemology and ontology in core ontologies: FOLaw and LRI-Core, two core ontologies for law](http://ceur-ws.org/Vol-118/paper2.pdf)
 
 
 ## Conceptual vs. lexical ontologies
@@ -79,7 +103,7 @@ In a multilayer model, the conceptual and the lexical levels are both present in
 Core elements in consumer law and their relations to each other.
 
 #### Concepts
-List of synsets in multiple languages. See <wordnet> for definition of _synset_.
+List of <wordnet> synsets in multiple languages.
 
 <!-- (Technically, the entities on the concept layer are _pointers_ to a list of synsets, like C2 points to `synset-supplier` and `synset-fornitore`. Conceptually this is no different from if C2 were just a list `[supplier, fornitore]`.) -->
 
@@ -91,9 +115,12 @@ Monolingual terminologies which are structured into a <wordnet>. The lexical lev
 
 ### Ajani et al. (2009): Legal Taxonomy Syllabus
 
-Another example is Ajani et al. (2009) [Legal Taxonomy Syllabus](https://www.researchgate.net/publication/238716915_Legal_Taxonomy_Syllabus_version_20), a multilevel ontology of EU and national levels. There's an ontology of concepts for EU and for each national system. On a separate level, there are _terms_ in different languages, which are mapped to the appropriate concepts. Like the previous, but without wordnet layer. Picture from the paper:
+![Image from Ajani et al. 2009](https://raw.githubusercontent.com/inariksit/cclaw-zettelkasten/master/legal_taxonomy_syllabus_example.png){#pic .ui .floated .medium .image .right}
 
-![Image from Ajani et al. 2009](https://raw.githubusercontent.com/inariksit/cclaw-zettelkasten/master/legal_taxonomy_syllabus_example.png)
+Another example is Ajani et al. (2009) [Legal Taxonomy Syllabus](https://www.researchgate.net/publication/238716915_Legal_Taxonomy_Syllabus_version_20), a multilevel ontology of EU and national levels. There's an ontology of concepts for EU and for each national system, shown in the small ovals.
+On a separate level, there are _terms_ in different languages, shown in the rectangles. Those terms are mapped to the appropriate concepts.
+
+The design is similar to the previous, but without the wordnet synset layer. The "concept" layer seems to correspond to the "Domain Ontology" in Biasiotti and Tiscornia, and the "term" layer looks like a flat version of "Lexicons": the terms don't have a hierarchy of their own.
 
 
 
@@ -115,84 +142,52 @@ Another example is Ajani et al. (2009) [Legal Taxonomy Syllabus](https://www.res
 > not. -->
 
 
-Boella and Rossi propose a model with 4 levels of ontologies. Like Biasiotti and Tiscornia, they include the distinction between _concepts_ and _terms_. But they allow for more complications: the concepts may be _organized_ in different ways, and the terms may be _used_ in different ways.
+Boella and Rossi propose a model with 4 levels of ontologies. Like the previously shown approaches, they include the distinction between _concepts_ and _terms_. But they allow for more complications: the concepts may be _organized_ in different ways in different jurisdictions, and the terms may be _used_ in different ways in different languages. 
 
-As a concrete use case, they present an EU law "Markets in Financial Instruments Directive" (MIFID).
-
-- Financial enterprises (such as banks) in EU countries need to comply to MIFID and national regulations.
-- MIFID is _implemented_ by the national legislators in the EU countries.
-- An ontology that represents MIFID needs to represent concepts on European and national levels. Potential misalignments:
-    1. Term and concept don't match, due to one or both of
-      - EU _term_ is already used in national law for a different _concept_.
-      - EU _concept_ is already used in national law with a different _term_.
-    2. Same term for the same concept in both EU and national, but different legal interpretation.
+For example, the EU laws are written on the EU level, but _implemented_ by the national legislators in the EU countries. Any ontology that represents EU laws needs at least two levels of representation: the European and the national level. There is potential for misalignments:
+* Term and concept don't match, due to one or both of
+  - EU _term_ is already used in national law for a different _concept_.
+  - EU _concept_ is already used in national law with a different _term_.
+* Same term for the same concept in both EU and national, but different legal interpretation.
     
-According to Boella and Rossi, it is difficult to create ontologies that work for legal rules
-independent of time and place. Law is a combination of _legal texts_ and their _interpretation and
-implementation_ in different jurisdictions.
+<!-- According to Boella and Rossi, it is difficult to create ontologies that work for legal rules -->
+<!-- independent of time and place. Law is a combination of _legal texts_ and their _interpretation and -->
+<!-- implementation_ in different jurisdictions. -->
 
-This 4-level ontology would really need a picture, but they have none.
+To fix this, they suggest a 4-level ontology. They don't have a concrete example nor a picture, so this is pretty abstract, and I may have misunderstood something.
 
-#### Level 1: "Lightweight ontologies"
+#### Level 1: Lightweight domain ontologies
 
-After reading the article, I have no clue why they call it "lightweight" and what is the opposite. Other descriptions from the paper:
-* “L1 allows multiple representations of the same domains, according to several extensional ontologies obtained by the legal literature.”
-* "foundational ontologies to the particularities of the legal domain."
-* "legal statements about company organisation provided by L1"
-* "L1 of the procedural model […] permits to elaborate extensional ontologies related to the described domain."
+Lightweight means little formalisation; not much more than a list of terms. These terms are obtained from actual documents. There can be multiple Level 1 ontologies of the same domain; for different languages, or for different time.
+
+<!-- * “L1 allows multiple representations of the same domains, according to several extensional ontologies obtained by the legal literature.” -->
+<!-- * "foundational ontologies to the particularities of the legal domain." -->
+<!-- * "legal statements about company organisation provided by L1" -->
+<!-- * "L1 of the procedural model […] permits to elaborate extensional ontologies related to the described domain." -->
 
 #### Level 2: "Service ontologies"
 
-Would be nice to have an actual concrete example in that paper. Just quoting here.
+Would be nice to have an actual concrete example in that paper. Just quoting here: _“The second layer (L2) is constituted by service ontologies, enabling the definition of roles and behaviours for agents in charge of executing tasks related to the specific domains considered by L1.”_
 
-* “The second layer (L2) is constituted by service ontologies, enabling the definition of roles and behaviours for agents in charge of executing tasks related to the specific domains considered by L1.”
-* "internal company organisation as shown in L2"
-* "definition of the roles and behaviours for agents in charge of executing tasks related to the scope of MIFID (L2)"
+<!-- > * "internal company organisation as shown in L2" -->
+<!-- > * "definition of the roles and behaviours for agents in charge of executing tasks related to the scope of MIFID (L2)" -->
 
 
 #### Level 3: Link between L1 and L2
 
-The ontologies L1 and L2 don't need to match each other. Matching and comparison of L1 and L2 is the job of L3.
+The ontologies L1 and L2 are built independent of each other. Matching and comparison of L1 and L2 is the job of L3.
 
-* “The third layer (L3) is devoted to link L1–L2, allowing to convert service concepts into/from domain concept ones, through a refinement in terms of ontological relations.”
-* "This comparison may allow to discover the misalignments between internal company organisation as shown in L2 and the legal statements about company organisation provided by L1."
-
-
-#### Level 4: "Core ontology"
-
-[Biasiotti and Tiscornia (2010)](https://link.springer.com/chapter/10.1007/978-94-007-0120-5_9) describe a legal core ontology:
-
-> Core ontologies are normally built on the knowledge elicited from legal experts and
-> include the formalisation of basic concepts with which legal theory commonly agrees.
-> In their specialisations in domain ontologies, the choice about the levels of generalisation is
-> left to the developers; it mainly depends on the kind of applications and the results one
-> expects to achieve, as they are expected to support classification, reasoning and the
-> decision making process.
-
-I imagine that legal core ontology has the role of upper ontology in general. Few concepts, lot of axioms.
-
-Examples of core ontologies:
-* FOLaw (Functional Ontology of Law), Valente, A. (1995) _"is addressed to describing the
-epistemological aspects of law as a control system of social behaviours."_
-* LRI-Core (Breuker and Winckels 2003), 
-* CLO (Core Legal Ontology) (Gangemi et al. 2003) _"organises legal concepts
-and relations on the basis of formal properties defined in the DOLCE+ foundational
-ontology library (Masolo et al. 2002)"_
-* [LKIF-Core](https://github.com/RinkeHoekstra/lkif-core#readme) (Hoekstra et al. 2007) _"is a modular collection of basic legal concepts aimed at supporting the implementation of rule-based knowledge bases for regulatory decision support systems."_
-
-For more information, see Breuker & Hoekstra [Epistemology and ontology in core ontologies: FOLaw and LRI-Core, two core ontologies for law](http://ceur-ws.org/Vol-118/paper2.pdf)
+<!-- > * “The third layer (L3) is devoted to link L1–L2, allowing to convert service concepts into/from domain concept ones, through a refinement in terms of ontological relations.” -->
+<!-- > * "This comparison may allow to discover the misalignments between internal company organisation as shown in L2 and the legal statements about company organisation provided by L1." -->
 
 
+#### Level 4: Core ontology
 
+Core ontology is defined earlier in this zettel. In this model, I didn't quite grasp what it's used for, but here's a quote.
 
+> Conversely, the definition of the roles and behaviours for agents in charge of executing tasks related to the scope of MIFID (L2), without considering the need of matching this ontology with the ontology of L1, gives the possibility to work in L3 with a contrastive comparison. This comparison may allow to discover the misalignments between internal company organisation as shown in L2 and the legal statements about company organisation provided by L1. In this way, the ontology of legal potentialities may emerge in the particular company choices, the black letter rule of the law and the legal interpretation about it.
+> The verification of these potentialities can be done by the orthogonal concepts of L4 that may offer solutions adopted in similar cases by the means of broader conceptual frameworks.
 
-<!-- > the European vs national levels and the multisystemic issues are considered.  -->
-<!-- > This is realized by means of separated ontologies, a common one for the -->
-<!-- > European level, whose concepts have linguistic realizations in the different languages of -->
-<!-- > the EU, and distinct ones for the national systems, whose concepts have linguistic -->
-<!-- > realizations in the respective national languages. The European and national levels are -->
-<!-- > related via an __implementation link between concepts__ to indicate how the national system -->
-<!-- > has implemented a concept present in a directive and _with which terminology_. -->
 
 
 <!--In the model we propose, lightweight ontologies are normally built, reviewed, and
@@ -219,3 +214,5 @@ in a more complex way, independently from single applications.
 [^1]: Biasiotti and Tiscornia (2010) argue that legal ontologies need to be built bottom-up: _"Since legal domain is strictly dependent on its own textual nature, a methodology for ontology construction must privilege a bottom–up approaches, based on a solid theoretical model."_
 
 [^2]:[Herbelot (2011)](https://web.archive.org/web/20130704143830/http://www.peerpress.de/discoursecpp.pdf) on ontology extraction: _"— a subfield of natural language processing which, put simply, specialises in producing lists. […] Well-loved ontology extraction tasks include the retrieval of Oscar nominees, chemical reactions and dead presidents. In this kind of research, the machine is asked, for instance, to produce a list of things that are ‘like lorries’ and is expected to duly return (given the current state of the art): `truck car motorcycle plane engine hamster.` Because lorries have wheels and hamsters have too."_
+
+[^3]:  (Heuristic of relevance: does the ontology have its own Wikipedia page.) Wikipedia remarks _"Note that the lack of fresh releases does not imply inactivity or uselessness."_ This is true especially for an upper ontology. The purpose is to be compact, and that kind of information doesn't need to be updated.
