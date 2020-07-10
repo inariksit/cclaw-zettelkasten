@@ -2,6 +2,7 @@
 date: "2020-06-18"
 tags:
   - todo
+  - ontology
 ---
 
 # SUMO
@@ -32,7 +33,7 @@ TODO: I don't know how the linking works in practice, or if the technical detail
 
 ## SUO-KIF
 
-SUMO is written in SUO-KIF. Unlike most ontology languages, SUO-KIF is not a description logic.
+SUMO is written in SUO-KIF. Unlike most ontology languages, SUO-KIF is __not__ among <description_logics>.
 
 ### Expressivity
 
@@ -40,14 +41,15 @@ _Quote from Mitrović et al. (2019) [Modeling Legal Terminology in SUMO](https:/
 
 > The existing SUMO model has most of the elements needed for a legal framework. It is implemented in a higher-order language, which, unlike a description logic or even first-order logic, allows us to use entire formulas as arguments to relations.
 
-SUMO is also translated into OWL: [http://www.adampease.org/OP/SUMO.owl](http://www.adampease.org/OP/SUMO.owl).
+SUMO is also translated into <owl>: [http://www.adampease.org/OP/SUMO.owl](http://www.adampease.org/OP/SUMO.owl).
 
 ## Terms
-(_TODO: terminology overview, does **term** in SUMO correspond to **concept** in e.g. Cyc and DOLCE, or is there a difference?_)
+_Note that in many other ontologies (e.g. Cyc, DOLCE), these would be called **concepts**._
 
-The basic building blocks of SUMO (and other ontologies). All of the `CamelCased` thingies in the examples above are terms (`Entity`, `AirportsFromAtoK`, `Heathrow`, …).
+Terms are the basic building blocks of SUMO (and other ontologies). All of the `CamelCased` thingies in the examples above are terms (`Entity`, `AirportsFromAtoK`, `Heathrow`, …).
 
 If you [browse SUMO online](http://sigma.ontologyportal.org:8080/sigma/Browse.jsp?kb=SUMO&lang=EnglishLanguage), you need to type the term in the text box where it says **KB Term**.
+
 
 SUO-KIF is untyped, so there is no formal difference what kind of role the terms may take.
 
@@ -147,7 +149,7 @@ Quotes from Enache (2010) [Reasoning and Language Generation in the SUMO Ontolog
 
 > (page 18) … in SUMO, functions and predicates do not only take instances as arguments, but also subclasses of a certain class,
 
-I'm confused about types, instances, classes, predicates, functions and all that stuff (especially what is a general ontology thing and what is specific to SUMO), but it seems like the authors of SUMO aren't doing a perfect job either.
+Given the untyped nature of SUMO, it's easy to get confused about types, instances, classes, predicates, functions and all that stuff.
 
 > (page 20) Regarding difficulties of the translation of SUMO definitions to GF, we name the presence of concepts that appear both as subclass and instance, in the same file or in different files. For example, in Mid-level-ontology-
 >

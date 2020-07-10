@@ -2,12 +2,13 @@
 date: "2020-06-23"
 tags:
   - language/ontology
+  - ontology
   - todo
 ---
 
 # OWL
 
-A family of ontology languages based on [description logics](https://www.lesliesikos.com/description-logics/).
+A family of ontology languages based on <description_logics>.
 
 - [Compact description on Leslie Sikos' homepage](https://www.lesliesikos.com/web-ontology-language/)
 - [Wikipedia article](https://en.wikipedia.org/wiki/Web_Ontology_Language)
