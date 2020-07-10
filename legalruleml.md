@@ -43,6 +43,9 @@ Inside the Rule, there is first some metadata and then the actual rule content.
 
 This rule has metadata about the rule _strength_: whether or not it can be overriden[^1]. This rule can be, hence its strength is Defeasible. To make this not just meaningless characters on the contract writer's computer, the property `DefeasibleStrength` refers to a shared resource by an [IRI](https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier).
 
+(These IRI links may point to an element in an <ontology>, but LegalRuleML is not an ontology language, and LegalRuleML documents are not ontologies.)
+
+
 ### Rule content
 
 #### Premise
@@ -80,11 +83,10 @@ The conclusion completes the rule with an `Obligation`:
 
 In addition to `Obligation`, there are other types of deontic operators, such as permissions, prohibitions, rights.
 
-## Comparison to other languages
+## Comparison to other languages and tools
 
-Quoting Jason's summary:
+LegalRuleML is not for documenting laws, and it’s not for writing code, it’s for documenting legal rule expressions that may be implemented in code elsewhere. 
 
-> So it’s not for documenting laws, and it’s not for writing code, it’s for documenting logical models of laws that may be implemented in code elsewhere.
 
 Contrast with
 - <akoma_ntoso>, which is for documenting laws
