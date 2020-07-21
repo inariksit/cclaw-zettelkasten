@@ -12,9 +12,82 @@ tags:
 _Description logics_ (DL) are a family of logics, often used in ontologies.
 (For more discussion on logics, see <logics_formalisms_languages_applications>)
 
-Most DLs are decidable fragments of first-order logic. [Krötzsch et al. (2013)](https://arxiv.org/abs/1201.4089) explain that there are many DLs, because different applications require different expressivity from the logic.
+Most DLs are decidable fragments of first-order logic.
+[Krötzsch et al. (2013)](https://arxiv.org/abs/1201.4089) explain that there are many DLs, because different applications require different expressivity from the logic.
 There is a tradeoff between expressivity and performance: inferring easy things is fast, inferring complex things is slow (or undecidable).
 
+## Basics
+
+### Individuals
+
+Single individuals in the domain.
+Correspond to __constants__ in first-order logic.
+
+### Concepts
+
+Sets of individuals.
+Correspond to __unary predicates__ in first-order logic.
+
+### Roles
+Binary relations between the individuals.
+Correspond to __binary predicates__ in first-order logic.
+
+## Axioms
+
+Axioms are usually divided in three groups: assertional (ABox), terminological (TBox) and relational (RBox).
+
+The following examples contain operations that are not common to all description logics. I'm following mostly [Krötzsch et al. (2013)](https://arxiv.org/abs/1201.4089), which describes SROIQ. There are resources that explain which DLs allow which operation (e.g. [Table 1](https://www.lesliesikos.com/description-logics/)), but such resources are much more helpful after reading through a list of the operations.
+
+### ABox (Assertional axioms)
+
+`Cat(garfield)` is a _concept assertion_ about a named individual Garfield, who belongs to the set of cats. In other words, Garfield is a cat.
+
+`owner(jon,garfield)` is a _role assertion_, describing a relation between Garfield and its owner Jon.
+
+Equality and inequality between individuals are also assertions.
+For example, `garfield ≠ jon` asserts that Garfield and Jon are two different individuals, and `jon = jon_arbuckle` asserts that the two names _Jon_ and _Jon Arbuckle_ refer to the same individual.
+
+### TBox (Terminological axioms)
+
+TBox axioms describe relationships between _concepts_.
+
+#### Concept inclusion
+`Cat ⊑ Animal` is a _concept inclusion_ for "cats are animals".
+
+#### Concept equivalence
+
+`Mother ≡ Parent ⊓ Woman` is a _concept equivalence_ between a shorthand name and its definition using _concept intersection_.
+
+
+### RBox (Relational axioms)
+
+RBox axioms describe relationships between roles.
+
+#### Role inclusion
+
+`motherOf ⊑ parentOf` is a _role inclusion_ for "motherhood is parenthood". All mothers are also parents.
+
+#### Role composition
+
+`brotherOf ◦ parentOf ⊑ uncleOf` is a _role composition_: the brother of my parent is my uncle.
+
+[Krötzsch et al. (2013)](https://arxiv.org/abs/1201.4089) on role composition:
+
+> Note that role composition can only appear on the left-hand side of
+> complex role inclusions. Furthermore, in order to retain decidability
+> of reasoning, complex role inclusions are governed by additional
+> structural restrictions that specify whether or not a collection
+> of such axioms can be used together in one ontology.
+
+#### Disjoint roles
+
+ `Disjoint(parentOf, childOf)` expresses that one can't be the parent and the child of the same individual.
+
+#### Reflexivity
+#### Symmetry
+#### Transitivity
+
+TODO
 
 ## SROIQ? SHOIN⁽ᴰ⁾? WTF?
 
