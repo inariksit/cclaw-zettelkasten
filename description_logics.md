@@ -23,14 +23,20 @@ There is a tradeoff between expressivity and performance: inferring easy things 
 Single individuals in the domain.
 Correspond to __constants__ in first-order logic.
 
-### Concepts
+Examples: `garfield`, `jon`.
 
-Sets of individuals.
+### Concepts / Classes
+
+Concepts are sets of individuals, or classes of individuals.
 Correspond to __unary predicates__ in first-order logic.
+
+Examples: `Cat`. Top (⊤) and bottom (⊥) are special concepts.
 
 ### Roles
 Binary relations between the individuals.
 Correspond to __binary predicates__ in first-order logic.
+
+Examples: `owner`.
 
 ## Axioms
 
@@ -63,13 +69,15 @@ TBox axioms describe relationships between _concepts_.
 
 RBox axioms describe relationships between roles.
 
+(These are not included in the most basic description logics. TODO: restructure this zettel.)
+
 #### Role inclusion
 
 `motherOf ⊑ parentOf` is a _role inclusion_ for "motherhood is parenthood". All mothers are also parents.
 
-#### Role composition
+##### Role composition
 
-`brotherOf ◦ parentOf ⊑ uncleOf` is a _role composition_: the brother of my parent is my uncle.
+`brotherOf ◦ parentOf ⊑ uncleOf` is a _complex role inclusion_: the brother of my parent is my uncle. The left-hand side `brotherOf ◦ parentOf` is a _role composition_.
 
 [Krötzsch et al. (2013)](https://arxiv.org/abs/1201.4089) on role composition:
 
@@ -78,6 +86,8 @@ RBox axioms describe relationships between roles.
 > of reasoning, complex role inclusions are governed by additional
 > structural restrictions that specify whether or not a collection
 > of such axioms can be used together in one ontology.
+
+Explanation why unrestricted role composition becomes undecidable, and how to restrict: [https://youtu.be/GdmI85J9fOE](https://youtu.be/GdmI85J9fOE?t=318)
 
 #### Disjoint roles
 
