@@ -22,7 +22,7 @@ It may also have one of the following
 
 ## Origins and etymology
 
-_Quotes from "Approaches to Legal Ontologies: Theories, Domains, Methodologies: 1 (Law, Governance and Technology Series)"_ 
+_Quotes from "Approaches to Legal Ontologies: Theories, Domains, Methodologies: 1 (Law, Governance and Technology Series)"_
 
 The name "ontology" has its roots in philosophy.
 
@@ -94,7 +94,7 @@ See [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework), a data 
 ### Axioms / Assertions / Theories / Facts / Rules
 
 Depending on the language of the ontology, it may be possible to express more complex relationships between the concepts. Depending on the ontology, these may be called with a variety of names.
-For instance, <sumo> uses the term _axiom_; [Cyc](http://slor.sourceforge.net/e_ocyc.htm) uses _theories_ and _facts_.
+For instance, <sumo> uses the term _axiom_; <cyc> uses _theories_ and _facts_.
 
 __In this zettelkasten, I will use the term _axiom_, unless I'm talking about a specific ontology that has established jargon.__
 
