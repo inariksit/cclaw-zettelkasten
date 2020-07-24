@@ -8,14 +8,14 @@ tags:
 
 # Ontology
 
-Collection of concepts and their relationships, in a machine-readable format.
+Collection of concepts and their relationships, in a machine-readable format. An ontology may contain facts about the world, like _Donald Trump is the 45th president of USA_, but more importantly, pre-factual knowledge, like _presidents are human_ and _in order to be a president at a given time, one must be alive at the time_.
 
 This zettel is really long, because I'm reading way too many papers about ontologies. Here's TL;DR.
 
 Ontology has:
 * _Taxonomy_ as a backbone (cat is an animal, animal is a living-entity, …)
 
-It may also have one of the following
+It may also have some of the following
 * Other, non-hierarchical _relations_ (cats are cute)
 * _Rules/axioms_ to derive facts that are not explicitly encoded by the ontology (motherhood is a special case of parenthood; Mary is John's mother -> Mary is John's parent)
 
@@ -53,7 +53,7 @@ Armchair … … … … KitchenTable
 ```
 
 Depending on the ontology, the concepts may be classes, individuals (or "particulars"), properties or any other term that an ontology engineer likes.
-Quote from _Mascardi et al. (2007) [A Comparison of Upper Ontologies](http://personales.upv.es/prosso/resources/MascardiEtAl_WOA07.pdf)_, comparing SUMO and DOLCE:
+Quote from _Mascardi et al. (2007) [A Comparison of Upper Ontologies](http://personales.upv.es/prosso/resources/MascardiEtAl_WOA07.pdf)_, comparing <sumo>and [DOLCE](http://www.loa.istc.cnr.it/dolce/overview.html):
 
 > DOLCE has been carefully crafted with respect to strong principles. DOLCE is an “ontology of particulars”; it does have universals (classes and properties), but the claim is that they are only employed in the service of describing particulars. In contrast, SUMO could be described as an ontology of both particulars and universals. It has a hierarchy of properties as well as classes. This is a very important feature for practical knowledge engineering, as it allows common features like transitivity to be applied to a set of properties, with an axiom that is written once and inherited by those properties, rather than having to be rewritten, specific to each property.
 
@@ -94,7 +94,7 @@ See [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework), a data 
 ### Axioms / Assertions / Theories / Facts / Rules
 
 Depending on the language of the ontology, it may be possible to express more complex relationships between the concepts. Depending on the ontology, these may be called with a variety of names.
-For instance, <sumo> uses the term _axiom_; <cyc> uses _theories_ and _facts_.
+For instance, <sumo> uses the term _axiom_; <cyc> uses _assertions_.
 
 __In this zettelkasten, I will use the term _axiom_, unless I'm talking about a specific ontology that has established jargon.__
 
