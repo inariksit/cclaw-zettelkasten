@@ -44,7 +44,7 @@ _Quote from Mitrović et al. (2019) [Modeling Legal Terminology in SUMO](https:/
 SUMO is also translated into <owl>: [http://www.adampease.org/OP/SUMO.owl](http://www.adampease.org/OP/SUMO.owl).
 
 ## Terms
-_Note that in many other ontologies (e.g. Cyc, DOLCE), these would be called **concepts**._
+_Note that in many other ontologies, these would be called **concepts**._
 
 Terms are the basic building blocks of SUMO (and other ontologies). All of the `CamelCased` thingies in the examples above are terms (`Entity`, `AirportsFromAtoK`, `Heathrow`, …).
 
@@ -56,7 +56,7 @@ SUO-KIF is untyped, so there is no formal difference what kind of role the terms
 - Class, like `AirportsFromAtoK`, `DeonticAttribute`
 - Individual, like `Heathrow`
 - Predicate, like `occupiesPosition`, `instance`. More about predicates after Axioms are introduced.
-
+- Function, like `WhenFn`, which takes a process and turns it into a time interval. More about functions after predicates.
 
 
 ## Axioms
@@ -99,25 +99,26 @@ As mentioned in Terms, predicates like `occupiesPosition` and `instance` are als
 
     (instance instance BinaryPredicate)
 
-Just like any terms, predicates and functions can be nicely placed in a hierarchy.
+Just like any terms, predicates (and functions--more about them soon!) can be nicely placed in a hierarchy.
 
                          Relation
                       /  |  |  |  \
-                    /    …  …  …   \
+                     /   …  …  …   \
             SingleValuedRelation …  Predicate
                    /                / … … … \
-               Function      BinaryPredicate QuaternaryPredicate
-              /   |  | | \
-             /   …  …  …  \
-          UnaryFunction … QuintaryFunction
+                  …       BinaryPredicate QuaternaryPredicate
 
-Furthermore, it's possible to specify the types of the arguments of a predicate, using the predicate `domain`. The following example limits the arguments of the predicate `address`.
 
-    (instance address BinaryPredicate)
-    (domain address 1 Agent)
-    (domain address 2 Address)
+Furthermore, we can specify the types of the arguments of a predicate, using another predicate called `domain`.
+Predicates have also an arity: binary predicates are an instance of `BinaryPredicate`, quaternary predicates of `QuaternaryPredicate` and so on. As the graph shows, `BinaryPredicate` and other arities are all subclasses of `Predicate`, so
 
-And of course, the use of `domain` [is defined by using `domain`](http://sigma.ontologyportal.org:8080/sigma/TreeView.jsp?lang=EnglishLanguage&simple=yes&kb=SUMO&term=domain)
+The following example defines the arguments of the predicate `homeAddress`.
+
+    (instance homeAddress BinaryPredicate)
+    (domain homeAddress 1 PermanentResidence)
+    (domain homeAddress 2 Human)
+
+And of course, `domain` is itself a `TernaryPredicate`, and its arguments are [defined by using `domain`](http://sigma.ontologyportal.org:8080/sigma/TreeView.jsp?lang=EnglishLanguage&simple=yes&kb=SUMO&term=domain)
 
     (instance domain TernaryPredicate)
     (domain domain 1 Relation)
@@ -139,6 +140,62 @@ Enache explains:
 > […] CaseRole is a kind of binary predicate, so the meaning of the axioms is applying the function to an instance of the first argument which is a type and the second argument, which is an instance already. A possible interpretation of the capability function would be the ability / possibility to perform a certain
 action. This interpretation would require a modal logic system, and a specific modality operator.
 -->
+
+## Function
+
+Let's add functions to the graph we saw previously.
+
+
+                         Relation
+                      /  |  |  |  \
+                     /   …  …  …   \
+            SingleValuedRelation …  Predicate
+                   /                / … … … \
+               Function      BinaryPredicate QuaternaryPredicate
+              /  |  |  \         ⌇
+             /   |  |   \      homeAddress
+            /    …  …    \
+    UnaryFunction … QuaternaryFunction
+                                    ⌇
+                                StreetAddressFn
+
+To illustrate the differences and similarites, consider the (binary) predicate `homeAddress` and the (quaternary) function [`StreetAddressFn`](http://sigma.ontologyportal.org:8080/sigma/Browse.jsp?lang=EnglishLanguage&flang=SUO-KIF&kb=SUMO&term=StreetAddressFn).
+
+
+* Both predicates and functions have _domain_. We saw the domains of `homeAddress` already, here is it for `StreetAddressFn`:
+
+  ```
+  (domain StreetAddressFn 1 StationaryArtifact)
+  (domain StreetAddressFn 2 Roadway)
+  (domain StreetAddressFn 3 City)
+  (domain StreetAddressFn 4 Nation)
+  ```
+
+* Both predicates and functions have _arity_.
+  ```
+  (instance homeAddress BinaryPredicate)
+  (instance StreetAddressFn QuaternaryFunction)
+  ```
+
+* Functions construct new arguments to predicates, and unlike predicates, functions have _range_. This is easier to illustrate with a simpler function, [`WhenFn`](http://sigma.ontologyportal.org:8080/sigma/Browse.jsp?kb=SUMO&lang=EnglishLanguage&flang=SUO-KIF&term=WhenFn).
+  ```
+  (domain WhenFn 1 Physical)
+  (range WhenFn TimeInterval)
+  ```
+
+  `WhenFn` takes a physical entity and returns a time interval. Say we want to talk about an individual murder (instance of `Murder`, which is an indirect subclass of `Physical`), then `WhenFn` applied to that murder is an instance of `TimeInterval`.
+
+  ```
+  (instance ?MURDER Murder)
+  (instance (WhenFn ?MURDER) TimeInterval)
+  ```
+  And we can use that `WhenFn ?MURDER` just like any time expression, e.g. as an argument to a predicate like [`earlier`](http://sigma.ontologyportal.org:8080/sigma/Browse.jsp?lang=EnglishLanguage&flang=SUO-KIF&kb=SUMO&term=earlier), which takes time intervals as argument.
+
+  ```
+  (earlier ?T
+           (WhenFn ?MURDER))
+  ```
+
 ## Type system
 
 Or rather lack of one. It seemed to cause some problems when translating SUMO to GF.
