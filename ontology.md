@@ -29,7 +29,7 @@ The name "ontology" has its roots in philosophy.
 > ontology is understood as “the science of what is, of the kinds and structures of objects, properties, events, processes and relations in every area of reality” (Smith 2003)
 
 If representing the true nature of reality sounds too ambitious, we can also say that ontologies _“are meant to provide the structures though which agents conceptualise (possibly wrongly) reality, rather than reality itself.”_
-
+<!--
 Ontologies are relevant in at least:
 - Philosophy
 - Artificial intelligence
@@ -38,7 +38,7 @@ Ontologies are relevant in at least:
 - Cognitive science
 
   > “for understanding how terms acquire different meanings __(which postulate different ontologies)__, we need to refer to cognitive science, i.e., to the basic architecture through which humans conceptualise the world according to their basic concerns. Cognitive science can provide the foundation for the most abstract ontological concepts.”
-
+-->
 ## Taxonomy
 
 The basic building block of an ontology is a hierarchy of concepts (or "terms"). Higher nodes represent general concepts, lower nodes more specific. For example, see the trees below.
