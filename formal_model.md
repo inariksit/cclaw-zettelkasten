@@ -20,6 +20,7 @@ To make it easier to test/reason about {contracts,programs}, we can build a _mod
   - Deontic logic
   - Propositional dynamic logic
 - Lee (1988) [A logic model for electronic contracting](https://www.sciencedirect.com/science/article/abs/pii/0167923688900966)
+- Peyton Jones and Eber (2003) _[How to write a financial contract](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.14.7885)_ A combinator library in Haskell for representing <financial_contract>.
 - Milosevic et al. (2004) [Business Contract Language](https://www.researchgate.net/publication/4085228_On_design_and_implementation_of_a_contract_monitoring_facility) _"A BCL contract consists of a set of roles along with a set of policies […] The roles define the parties involved in a contract, and the policies define the obligations and rights agreed upon by the parties. […] Governatori and Milosevic [36] later seek to formalise BCL by mapping it to a fragment of deontic logic extended with contrary-to-duty obligations. "_
 - Prisacariu, Schneider (2009): [Contract Language](http://www.cse.chalmers.se/~gersch/icail09.pdf) _"a logic for expressing electronic contracts based on a combination of deontic, dynamic, and temporal logics. "_
 - Martínez et al. (2010): [C-O diagrams](http://www.cse.chalmers.se/~gersch/scc2010.pdf)
