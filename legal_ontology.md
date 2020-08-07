@@ -9,14 +9,14 @@ tags:
 
 [!["Things are the subjects of dominion or property, as distinguished from person. They are distributed into three kinds: (1) Things real or immovable, comprehending lands, tenements, and hereditable: (2) things personal or movable, comprehending goods and chattels: and (3) things mixed. partaking of the characteristics of the trio former"](https://raw.githubusercontent.com/inariksit/cclaw-zettelkasten/master/things.png "Things defined in Black's Law Dictionary")](https://en.wikisource.org/wiki/Page:Black%27s_Law_Dictionary_(Second_Edition).djvu/1161){#pic .ui .floated .right .medium .image}
 
-Model legal knowledge in an <ontology>.
+Formal decription of the legal domain[^1] in an <ontology>.
 
 _"Good news: lawyers have been doing it almost as long as Aristotle-and you all think like ontology engineers"_ -- [Burkhard Schafer, ReMeP 2020](https://www.remep.net/wp-content/uploads/2020/06/Burkhart-Schafer_Legal-Ontologies-a-very-short-introduction_ReMeP2020.pptx.pdf)
 
 (See also rest of the slides from ReMeP 2020's panel [Legal Ontologies: Why Are They Relevant In Practice?](https://www.remep.net/materials-2020/))
 
 ## Types of legal ontologies
-For explanation on core, domain and lexical ontology, see <ontology_interoperability>. 
+For explanation on core, domain and lexical ontology, see <ontology_interoperability>.
 
 ### Legal core ontologies
 
@@ -74,7 +74,6 @@ For example:
 * [JurWordNet](https://www.fi.muni.cz/gwc2004/proc/111.pdf), where Italian <wordnet> is extended for legal domain.
 
 
-
 ## Logical semantics of legal rules
 
 Many ontology languages are based on <description_logics>, which aren't powerful enough represent the logical semantics required for legal rules. [Mitrović et al. (2019)](https://www.researchgate.net/publication/338937692_Modeling_Legal_Terminology_in_SUMO) model legal knowledge in <sumo>, which is written in a more expressive language.
@@ -91,3 +90,4 @@ TODO: write more about this. SUMO lacks a lot of legal concepts because it is a 
 
 
 
+[^1]: _“[L]egal ontologies can be considered the formal description of the domain of legal discourse. A decision to make is, therefore, what counts as “legal discourse”. However, it is difficult to identify one single legal discourse since it has been highlighted that different levels of legal language exist (Tiscornia 2005), among which we can identify the following: (i) __the discourse of the legislator__ (laws and regulations); (ii) __the discourse of the judges__ (judgements and other judicial decisions); (iii) __the discourse of the doctrine__ (studies on several legal subdomains, systematising legislator and judges’ discourses); (iv) __the discourse of legal theory__ (legal works having a general content, not addressing a particular legal system).”_ ([Fernández-Barrera, Sartor (2010)](https://link.springer.com/chapter/10.1007/978-94-007-0120-5_2), emphasis mine)
