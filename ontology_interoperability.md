@@ -10,6 +10,14 @@ Ontologies can differ in several axes. The following are from _Approaches to Leg
 
 <!-- > the current wide typology of legal ontologies in terms of granularity (domain-specific vs. core), degree of formality (highly axiomatised vs. lexical or language-oriented), methodologies of development (top–down vs. bottom–up and middle-out), and knowledge sources for concept and term extraction (official legal sources vs. legal expert interview and ethnographic work) -->
 
+### Topology
+
+[Fernández-Barrera and Sartor (2010)](https://link.springer.com/chapter/10.1007/978-94-007-0120-5_2) divide ontologies by topology. __Rooted tree__ is a strict `is-a` taxonomy, whereas __operational family__ has a more diverse structure, with loops.
+
+<!-- > “On the other hand, operational families of concepts, will not necessarily follow the model of a rooted tree, and will acquire more diverse structures. This is due to the fact that concepts in an operational family are not necessarily related to a single beginner, but can form looped structures. ” -->
+
+In practice, most ontologies allow both: `is-a` hierarchy as a backbone, and other relations in addition.
+
 
 ### Granularity
 An ontology can be __domain-specific__, meant to cover a domain in fine detail. Contrast with __upper__ ontologies, which are more general and have a small number of concepts.

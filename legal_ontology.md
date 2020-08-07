@@ -7,7 +7,7 @@ tags:
 
 # Legal ontology
 
-[!["Things are the subjects of dominion or property, as distinguished from person. They are distributed into three kinds: (1) Things real or immovable, comprehending lands, tenements, and hereditable: (2) things personal or movable, comprehending goods and chattels: and (3) things mixed. partaking of the characteristics of the trio former"](https://raw.githubusercontent.com/inariksit/cclaw-zettelkasten/master/things.png "Things defined in Black's Law Dictionary")](https://en.wikisource.org/wiki/Page:Black%27s_Law_Dictionary_(Second_Edition).djvu/1161){#pic .ui .floated .right .medium .image}
+[!["Things defined in Black's Law Dictionary"](https://raw.githubusercontent.com/inariksit/cclaw-zettelkasten/master/things.png "Things are the subjects of dominion or property, as distinguished from person. They are distributed into three kinds: (1) Things real or immovable, comprehending lands, tenements, and hereditable: (2) things personal or movable, comprehending goods and chattels: and (3) things mixed. partaking of the characteristics of the trio former")](https://en.wikisource.org/wiki/Page:Black%27s_Law_Dictionary_(Second_Edition).djvu/1161){#pic .ui .floated .right .medium .image}
 
 Formal decription of the legal domain[^1] in an <ontology>.
 
@@ -20,19 +20,27 @@ For explanation on core, domain and lexical ontology, see <ontology_interoperabi
 
 ### Legal core ontologies
 
-A legal core ontology defines basic concepts like _legal role_, _process_, _place_, _time_, etc. It would typically have few concepts that are very general to the domain.
+A legal core ontology defines basic concepts like _legal role_, _process_, _place_, _time_, etc. Typically, core ontologies have few concepts that are very general to the overall domain (legal domain, not subdomains like civil law), ordered from general to specific (e.g. [genus--differentia](https://en.wikipedia.org/wiki/Genus%E2%80%93differentia_definition)). Legal core ontologies don't get out of date very often: the knowledge is so generic and foundational that contents of individual laws rarely affect them.
 
-[Biasiotti and Tiscornia (2010)](https://link.springer.com/chapter/10.1007/978-94-007-0120-5_9) describe legal core ontologies:
+#### Example from 1930
 
-> Core ontologies are normally built on the knowledge elicited from legal experts and
-> include the formalisation of basic concepts with which legal theory commonly agrees.
-> In their specialisations in domain ontologies, the choice about the levels of generalisation is
-> left to the developers; it mainly depends on the kind of applications and the results one
-> expects to achieve, as they are expected to support classification, reasoning and the
-> decision making process.
+![Legal acts in (Windscheid, 1930)](https://raw.githubusercontent.com/inariksit/cclaw-zettelkasten/master/legal_acts.png)
 
 
-Examples of legal core ontologies:
+<!-- (https://raw.githubusercontent.com/inariksit/cclaw-zettelkasten/master/legal_acts.png) -->
+
+
+<!-- [Biasiotti and Tiscornia (2010)](https://link.springer.com/chapter/10.1007/978-94-007-0120-5_9) describe legal core ontologies: -->
+
+<!-- > Core ontologies are normally built on the knowledge elicited from legal experts and -->
+<!-- > include the formalisation of basic concepts with which legal theory commonly agrees. -->
+<!-- > In their specialisations in domain ontologies, the choice about the levels of generalisation is -->
+<!-- > left to the developers; it mainly depends on the kind of applications and the results one -->
+<!-- > expects to achieve, as they are expected to support classification, reasoning and the -->
+<!-- > decision making process. -->
+
+
+#### Some (modern) legal core ontologies
 * FOLaw (Functional Ontology of Law), Valente, A. (1995) _"is addressed to describing the
 epistemological aspects of law as a control system of social behaviours."_
 * LRI-Core (Breuker and Winckels 2003), _") is a core ontology that covers the main concepts that are common to all legal domains. It starts with four main categories: **physical concepts, mental concepts, roles, and abstract concepts**. The notion of ‘what can happen to an object’ is pursued."_
@@ -44,7 +52,10 @@ ontology library (Masolo et al. 2002)"_
 
 Might be relevant to read/skim Breuker & Hoekstra [Epistemology and ontology in core ontologies: FOLaw and LRI-Core, two core ontologies for law](http://ceur-ws.org/Vol-118/paper2.pdf)
 
+
 ### Legal domain ontologies
+
+Legal domain ontologies gather together concepts that belong to a particular domain. The number of concepts is usually higher than in core ontologies, and domain ontologies need to be updated more often, when laws change.
 
 [Sartor et al. (2010)](https://link.springer.com/book/10.1007/978-94-007-0120-5) list the following applications for legal domain ontologies. TODO: add links to actual ontologies. (The book didn't have links.)
 
