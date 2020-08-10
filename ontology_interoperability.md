@@ -46,6 +46,12 @@ A __domain ontology__ describes details of a particular domain. Examples of doma
 
 In contrast, an __upper ontology__ (synonyms: __top-level ontology__, __foundation ontology__) _"describes very general concepts that are the same across all domains. The aim is to have a large number on ontologies accessible under this upper ontology.”_ (Mascardi et al. (2007) [A Comparison of Upper Ontologies](http://personales.upv.es/prosso/resources/MascardiEtAl_WOA07.pdf))
 
+[Breuker and Hoekstra (2010)](https://www.researchgate.net/publication/227256484_A_Cognitive_Science_Perspective_on_Legal_Ontologies) list two roles for an upper ontology. Emphasis mine.
+
+> “The first one is to provide a _structure of classes_ where a _domain ontology can hang its main concepts_ as subclasses. It gives a starting position for more detailed modeling.
+> The second role is even more interesting: by inheritance one gets already defined properties for free, which helps in consistency checking.”
+
+
 In the following picture, the domain ontologies of Neurology and Airports are connected to an upper ontology, which starts from very generic terms. (Made-up example, not from any real ontology.)
 
               Entity
