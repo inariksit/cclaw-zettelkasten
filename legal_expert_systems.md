@@ -2,6 +2,7 @@
 date: "2020-06-17"
 tags:
   - approach
+  - expert_system
 ---
 
 # Legal expert systems
