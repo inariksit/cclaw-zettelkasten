@@ -20,9 +20,7 @@ In practice, most ontologies allow both: `is-a` hierarchy as a backbone, and oth
 
 
 ### Granularity
-An ontology can be __domain-specific__, meant to cover a domain in fine detail. Contrast with __upper__ ontologies, which are more general and have a small number of concepts.
-
-The term __core ontology__ is sometimes used. If I (Inari) have understood correctly, a core ontology is sort of an upper ontology for a domain. So a true upper ontology is super generic, starting from `Entity`, core ontology would start from the most general concepts for a given field, like (for legal domain) _legal role_, _process_, _place_, _time_, etc.
+An ontology can be __domain-specific__, meant to cover a domain in fine detail. Contrast with __upper__ ontologies, which are more general and have a small number of concepts. __Core__ ontology is used for a general ontology within a domain: an "upper ontology" for just legal domain is better described as a _legal core ontology_. For more details, see <top_ontology_domain_ontologies>.
 
 
 ### Formality
@@ -40,37 +38,6 @@ Combination of the two is called __middle-out__: start from the middle, generali
 <!-- Bottom-up approach does a better job at modeling reality than thinking of [intensional](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions) descriptions while sitting in an armchair, but both have their weaknesses: it's easy to introduce inconsistencies in bottom-up, and easy to get stuck with a bad abstraction in top-down.  -->
 
 
-## Upper ontology and domain ontologies
-
-A __domain ontology__ describes details of a particular domain. Examples of domain ontologies are a biomedical ontology (or even more specific, only about neurology), or an ontology about airports.
-
-In contrast, an __upper ontology__ (synonyms: __top-level ontology__, __foundation ontology__) _"describes very general concepts that are the same across all domains. The aim is to have a large number on ontologies accessible under this upper ontology.”_ (Mascardi et al. (2007) [A Comparison of Upper Ontologies](http://personales.upv.es/prosso/resources/MascardiEtAl_WOA07.pdf))
-
-[Breuker and Hoekstra (2010)](https://www.researchgate.net/publication/227256484_A_Cognitive_Science_Perspective_on_Legal_Ontologies) list two roles for an upper ontology. Emphasis mine.
-
-> “The first one is to provide a _structure of classes_ where a _domain ontology can hang its main concepts_ as subclasses. It gives a starting position for more detailed modeling.
-> The second role is even more interesting: by inheritance one gets already defined properties for free, which helps in consistency checking.”
-
-
-In the following picture, the domain ontologies of Neurology and Airports are connected to an upper ontology, which starts from very generic terms. (Made-up example, not from any real ontology.)
-
-              Entity
-              /  |  \
-            … … … … … …
-        Biology  …  Geography
-        / | | \ … … / | | \
-     … … … … … … … … … … … … …
-         |                 \
-      Neurology           Europe
-      / | | \            /   |  \
-     … … … … … … … … … … … … … … …
-     |                         |
-    Optic nerve          Heathrow airport
-
-
-<sumo> is a big, well-known upper ontology. [Mascardi et al.](http://personales.upv.es/prosso/resources/MascardiEtAl_WOA07.pdf) list other big ones (in 2007). [Wikipedia](https://en.wikipedia.org/wiki/Upper_ontology#Available_upper_ontologies) has a more up-to-date list.[^3]
-
-Some upper ontologies on the legal domain (called __legal core ontologies__) are listed in <legal_ontology>.
 
 ## Conceptual ontologies and lexical ontologies
 
@@ -118,5 +85,3 @@ The design is similar to the previous, but without the wordnet synset layer. The
 [^1]: Biasiotti and Tiscornia (2010) argue that legal ontologies need to be built bottom-up: _"Since legal domain is strictly dependent on its own textual nature, a methodology for ontology construction must privilege a bottom–up approaches, based on a solid theoretical model."_
 
 [^2]:[Herbelot (2011)](https://web.archive.org/web/20130704143830/http://www.peerpress.de/discoursecpp.pdf) on ontology extraction: _"— a subfield of natural language processing which, put simply, specialises in producing lists. […] Well-loved ontology extraction tasks include the retrieval of Oscar nominees, chemical reactions and dead presidents. In this kind of research, the machine is asked, for instance, to produce a list of things that are ‘like lorries’ and is expected to duly return (given the current state of the art): `truck car motorcycle plane engine hamster.` Because lorries have wheels and hamsters have too."_
-
-[^3]: Heuristic of relevance: does the ontology have its own Wikipedia page. Wikipedia remarks _"Note that the lack of fresh releases does not imply inactivity or uselessness."_ This is true especially for an upper ontology. The purpose is to be compact and general, and that kind of information doesn't need to be updated.
