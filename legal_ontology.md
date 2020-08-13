@@ -20,7 +20,7 @@ For explanation on core, domain and lexical ontology, see <ontology_interoperabi
 
 ### Legal core ontologies
 
-A legal core ontology defines basic concepts like _legal role_, _process_, _place_, _time_, etc. Typically, core ontologies have few concepts that are very general to the overall domain (legal domain, not subdomains like civil law), ordered from general to specific (e.g. [genus--differentia](https://en.wikipedia.org/wiki/Genus%E2%80%93differentia_definition)). Legal core ontologies don't get out of date very often: the knowledge is so generic and foundational that contents of individual laws rarely affect them.
+A legal core ontology defines basic concepts like _legal role_, _process_, _place_, _time_, etc. Typically, core ontologies have few concepts that are very general to the overall domain (legal domain, not subdomains like civil law), ordered from general to specific (see [genus--differentia](https://en.wikipedia.org/wiki/Genus%E2%80%93differentia_definition)). Legal core ontologies don't get out of date very often: the knowledge is so generic and foundational that contents of individual laws rarely affect them.
 
 #### Example from 1930
 
@@ -72,6 +72,14 @@ Legal domain ontologies gather together concepts that belong to a particular dom
 * Represent procedural stages of Spanish civil hearings
 * Semantically enrich legal texts
 <!-- * Represent top-level concepts (e.g. ownership) -->
+
+
+[Ashley (2010)]() presents a domain ontology for supporting case-based reasoning. Previous cases are encoded in an ontology, so that lawyers can find relevant analogies, despite shallow dissimilarities---Ashley names, among others, a hunter scaring away ducks another hunter is about to shoot, and a baseball spectator picking a baseball from another fan who caught it first, but dropped because others tackled him.
+
+> [T]he domain ontology will have to represent some fundamental categories of human agency (See Breuker and Hoekstra 2004b) such as:
+> * Interference: not interfering, interfering physically with, preventing someone’s reaching a goal
+> * Intentionality: acting unintentionally, negligently, knowingly or intentionally
+> * Objectiveness of intention: hiding ones intentions, being ambiguous about them or manifesting them clearly”
 
 
 TODO: where should things like [Lynx: Legal Knowledge Graph](http://www.lynx-project.eu/) be placed?
