@@ -11,7 +11,7 @@ SUMO (Suggested Upper-Merged Ontology) has the approach of _domain_ ontologies a
 
 * Top level
 ```
-            Entity
+            Entityne
             /    \
       Abstract   Physical
       / | | \    /    |  \
@@ -195,6 +195,8 @@ To illustrate the differences and similarites, consider the (binary) predicate `
   (earlier ?T
            (WhenFn ?MURDER))
   ```
+
+But that's not all: you can do actual computations using Functions. [Adam Pease demonstrates](https://www.youtube.com/watch?v=lL-OmYNJCgQ&t=250).
 
 ## Type system
 
