@@ -183,7 +183,7 @@ To illustrate the differences and similarites, consider the (binary) predicate `
   (range WhenFn TimeInterval)
   ```
 
-  `WhenFn` takes a physical entity and returns a time interval. Say we want to talk about an individual murder (instance of `Murder`, which is an indirect subclass of `Physical`), then `WhenFn` applied to that murder is an instance of `TimeInterval`.
+  `WhenFn` takes a physical entity and returns a time interval. Say we want to talk about an individual murder (instance of `Murder`, which is an indirect subclass of `Physical`), then `WhenFn` applied to that murder is an instance of `TimeInterval`. (See also [Adam Pease's explanation](https://www.youtube.com/watch?v=b5MiQHrkbB8&t=172).)
 
   ```
   (instance ?MURDER Murder)
