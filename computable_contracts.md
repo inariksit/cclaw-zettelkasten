@@ -9,7 +9,7 @@ tags:
 
 Paper by Harry Surden from 2012.
 
-(Inari: read up to page 30, TODO read the rest.)
+(Inari: read up to page 46, TODO read the rest.)
 
 ## Challenges
 
@@ -36,6 +36,8 @@ Standard, reusable formats and languages[^2] are preferred, as well as UI that e
 ## Examples
 
 Most examples in the paper are about financial contract: the terms (data) are who will pay what to whom, and the completion criteria is the state of the parties' bank accounts.
+
+Computable contracts allow us to do more things than traditional. Surden gives an example of movie streaming and geographical constraints. In a traditional contract, the company would express the condition verbally ("only authorized in the US"), but a computational contract may be equipped with software that recognizes the geographic location of a user based on an IP address. Surden says, _"The parties might agree that such an assessment, while imperfect, is an efficient and sufficiently accurate representation of their intended condition of performance and geographic location and is preferable to the traditional written clause."_
 
 ## Limitations
 
