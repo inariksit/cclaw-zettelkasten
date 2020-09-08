@@ -54,4 +54,4 @@ There is a tool available for converting DMN decision tables into RuleML, on whi
 ## NLG
 
 There's a preliminary [GF grammar](https://github.com/smucclaw/dmnmd/tree/master/languages/gf#readme) for DMN tables.
-In order to create more fluent language, instead of "when <HEADER> is <VALUE>". the GF grammar needs explicit constructors in the abstract syntax to create a column of e.g. event, location, time or Boolean expression.
+In order to create more fluent language, instead of "when HEADER is VALUE". the GF grammar needs explicit constructors in the abstract syntax to create a column of e.g. event, location, time or Boolean expression.
