@@ -1,8 +1,8 @@
 ---
 date: "2020-06-26"
 tags:
-  - language
-  -
+  - language/programming
+  - tool
 ---
 
 # DMN
