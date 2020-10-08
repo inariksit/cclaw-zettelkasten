@@ -29,7 +29,10 @@ SUMO (Suggested Upper-Merged Ontology) has the approach of _domain_ ontologies a
 
 All entries in SUMO are part of a single tree, starting from `Entity`. A domain ontology about airports is linked to the top level ontology, in a distant subtree of physical entities.
 
-TODO: I don't know how the linking works in practice, or if the technical details have any relevance to the scope of CCLAW readings. ([Niles, Pease (2001)](https://dl.acm.org/doi/pdf/10.1145/505168.505170) seems to describe the merging process, read later if interested.)
+The upper ontology of SUMO consists of 1000 terms and a bunch of axioms. The cutoff at 1000 is just arbitrary; you have to draw the line somewhere. The domain ontology becomes connected to SUMO by using existing SUMO terms in the new terms and axioms it defines. For instance, if I need to add the term `FullMoon` to my new domain ontology, I add axioms that use the existing SUMO terms `Moon`, `TimeInterval`, `during` and so on. By this practice, my new ontology is a SUMO domain ontology.
+
+<!--
+TODO: I don't know how the linking works in practice, or if the technical details have any relevance to the scope of CCLAW readings. ([Niles, Pease (2001)](https://dl.acm.org/doi/pdf/10.1145/505168.505170) seems to describe the merging process, read later if interested.) -->
 
 ## SUO-KIF
 
@@ -44,7 +47,7 @@ _Quote from Mitrović et al. (2019) [Modeling Legal Terminology in SUMO](https:/
 SUMO is also translated into <owl>: [http://www.adampease.org/OP/SUMO.owl](http://www.adampease.org/OP/SUMO.owl).
 
 ## Terms
-_Note that in many other ontologies, these would be called **concepts**._
+_In some other ontologies, these would be called **concepts**._
 
 Terms are the basic building blocks of SUMO (and other ontologies). All of the `CamelCased` thingies in the examples above are terms (`Entity`, `AirportsFromAtoK`, `Heathrow`, …).
 
