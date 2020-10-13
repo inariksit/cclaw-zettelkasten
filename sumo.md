@@ -201,6 +201,26 @@ To illustrate the differences and similarites, consider the (binary) predicate `
 
 But that's not all: you can do actual computations using Functions. [Adam Pease demonstrates](https://www.youtube.com/watch?v=lL-OmYNJCgQ&t=250).
 
+## Mappings to WordNet
+
+_Quotes from the SUMO book (Pease, 2011)._
+
+SUMO has hand-written mappings to all of WordNet 3.0. (Latest version of WordNet is 3.1.) A synset in <wordnet> can correspond to SUMO term one-to-one, like WN _satellite_ to SUMO `ArtificialSatellite`, or in a subsumption relation, like WN _elk_ and _deer_ to SUMO `HoofedMammal`. The more general a SUMO concept is, the more WordNet synsets it covers.
+
+WordNet was an important source of terms when SUMO was constructed.
+
+> [Mapping SUMO to WN] helped considerably in determining where SUMO was lacking in coverage. If a concept in WN did not appear to have a proper term in SUMO to link to, that often led us to create a new term or set of terms.
+
+SUMO and WordNet have different purposes. As Adam Pease says, _" WordNet is appropriate for modeling language. SUMO is appropriate for modeling truths about the world."_ Pease illustrates the difference with an example: the SUMO `Plumber` is a subclass of `Social Role` and ultimately of `Attribute`, whereas the WordNet _plumber_ is a hyponym of _artisan_ and ultimately a _person_. In SUMO, a job is a role of a person, so it's more accurate to say `(attribute Alice Plumber)` and `(instance Alice Human)` than _(instance Alice Plumber)_. In contrast, WordNets concerns are linguistic:
+
+> (p. 162)  The hyponym/hypernym relation is intended to represent linguistic notions, especially the substitution test, which allows more general words to be substituted for more specific words in a sentence without making a sentence nonsensical.
+
+The difference can be expressed in even simpler terms: WordNet contains words, but SUMO doesn't.
+
+<!-- > (p. 163) Having SUMO and WN as distinct but linked products allows us to separate language and logic and not have linguistic concerns impact the representation of reality, or the goal of representing the world disturb the accurate representation of human language as written and spoken. -->
+
+>  (p. 164) Note that the SUMO terms are not words. They are formal terms with definitions in first-order logic. Note also that the relationship between Knife and Cutting is not just a link, but a logical axiom suitable for use in theorem proving.
+
 ## Type system
 
 Or rather lack of one. It seemed to cause some problems when translating SUMO to GF.
