@@ -8,5 +8,5 @@ tags:
 
 Way to represent complex text or computations as rows and columns of a table.
 
-- <dmn>
-- <decision_table>
+- [[[dmn]]]
+- [[[decision_table]]]

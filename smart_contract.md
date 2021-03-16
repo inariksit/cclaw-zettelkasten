@@ -7,14 +7,14 @@ tags:
 
 # Smart contract
 
-A smart contract is a <contract> where some part of the
+A smart contract is a [[[contract]]] where some part of the
 terms has been represented in code (or possibly in
 some other way) to allow parts of the
 contract to be executed automatically, or to allow
 analysis of the contract.
 
 "Smart contracts" are often mistakenly conflated with contracts that
-use blockchain to record information and exchange currency. See <blockchain_and_smart_contracts>.
+use blockchain to record information and exchange currency. See [[[blockchain_and_smart_contracts]]].
 
 Any type of contract can be a smart contract.
 
@@ -41,4 +41,4 @@ to automate the same intent.
 
 ### Languages for writing smart contracts
 
-<z:zettels?tag=language/smartcontract&cf>
+[[z:zettels?tag=language/smartcontract]]

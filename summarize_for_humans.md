@@ -6,7 +6,7 @@ tags:
 
 # Classification and summarization
 
-Human volunteers go through a <legal_contract> like license agreement or privacy policy, and write a human-readable summary. Examples:
+Human volunteers go through a [[[legal_contract]]] like license agreement or privacy policy, and write a human-readable summary. Examples:
 - [ToS;DR](https://tosdr.org/)
 - [tl;dr Legal](https://tldrlegal.com/)
 - [Licentia](http://licentia.inria.fr/visualize)

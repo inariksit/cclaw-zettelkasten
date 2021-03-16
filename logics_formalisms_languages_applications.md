@@ -27,7 +27,7 @@ you can use to generate new knowledge from the knowledge you already have. They
 are designed for different functions, and some of them
 are designed specifically for computation, like lambda calculus.
 
-<z:zettels?tag=logic&cf>
+[[z:zettels?tag=logic]]
 
 
 ## What is a Programming Language?
@@ -49,7 +49,7 @@ or a set of rules with modes, or a set of rules and exceptions to those rules.
 
 (See the following list for languages that have an entry in this zettelkasten.)
 
- <z:zettels?tag=language/**>
+ [[[z:zettels?tag=language/**]]]
 
 
 ## What is a "Formalism"?
@@ -64,7 +64,7 @@ And if it gives you a strict way of writing things down for use in a computer,
 but there is no way to take what you have written down and generate new
 information from it, then it is not a programming language.
 
-As an example, <legalruleml> allows you to write down, in a strictly formalized
+As an example, [[[legalruleml]]] allows you to write down, in a strictly formalized
 way, statements of law. But the LegalRuleML standard explicitly states that
 there is *no semantic meaning* applied to those statements. You can't build
 a LegalRuleML compiler, because there is no logic to implement.
@@ -102,5 +102,5 @@ building as a programming langauge, we give ourselves an
 excuse for building things that are unnecessarily hard and complicated.
 
 So for our purposes, I think things that are stereotypical programming
-languages, like <ergoai_ergolite>, and things that are visual tools like <neota_logic>,
+languages, like [[[ergoai_ergolite]]], and things that are visual tools like [[[neota_logic]]],
 should be in the same main category: tools.

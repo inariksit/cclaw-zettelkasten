@@ -8,7 +8,7 @@ tags:
 
 # OWL
 
-A family of ontology languages based on <description_logics>.
+A family of ontology languages based on [[[description_logics]]].
 
 - [Compact description on Leslie Sikos' homepage](https://www.lesliesikos.com/web-ontology-language/)
 - [Wikipedia article](https://en.wikipedia.org/wiki/Web_Ontology_Language)

@@ -72,8 +72,8 @@ As Lawsky says, default logics can be interpreted into classical logics; the app
 
 ## Examples in real world
 
-- <catala> is based on default logic.
-- <legalruleml> has an option `DefeasibleStrength` for rules that may be overriden.
+- [[[catala]]] is based on default logic.
+- [[[legalruleml]]] has an option `DefeasibleStrength` for rules that may be overriden.
 
 
 

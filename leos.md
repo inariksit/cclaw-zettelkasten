@@ -17,7 +17,7 @@ It is like a project management tool for legislative drafting in a complicated e
 
 It is not clear whether it is actually being used in production, yet. It is described as a pilot. It is written in Java and uses Maven.
 
-It uses <akoma_ntoso> as its storage language for the legislative texts, but that is used as a storage format only. The XML is not exposed to the user,
+It uses [[[akoma_ntoso]]] as its storage language for the legislative texts, but that is used as a storage format only. The XML is not exposed to the user,
 and there does not seem to be an export feature.
 
 It is potentially relevant to the Centre's work in that it is open source, and it is a platform for legislative drafting. It is the sort of thing

@@ -20,7 +20,7 @@ In practice, most ontologies allow both: `is-a` hierarchy as a backbone, and oth
 
 
 ### Granularity
-An ontology can be __domain-specific__, meant to cover a domain in fine detail. Contrast with __upper__ ontologies, which are more general and have a small number of concepts. __Core__ ontology is used for a general ontology within a domain: an "upper ontology" for just legal domain is better described as a _legal core ontology_. For more details, see <top_ontology_domain_ontologies>.
+An ontology can be __domain-specific__, meant to cover a domain in fine detail. Contrast with __upper__ ontologies, which are more general and have a small number of concepts. __Core__ ontology is used for a general ontology within a domain: an "upper ontology" for just legal domain is better described as a _legal core ontology_. For more details, see [[[top_ontology_domain_ontologies]]].
 
 
 ### Formality
@@ -37,7 +37,7 @@ In contrast, __top-down__ starts from conceptual models. Take a generic concept,
 Combination of the two is called __middle-out__: start from the middle, generalize upwards and specialize downwards. See [El Ghosh et al. (2016)](https://www.researchgate.net/publication/304814412_Towards_a_Middle-out_Approach_for_Building_Legal_Domain_Reference_Ontology) for more info.
 <!-- Bottom-up approach does a better job at modeling reality than thinking of [intensional](https://en.wikipedia.org/wiki/Extensional_and_intensional_definitions) descriptions while sitting in an armchair, but both have their weaknesses: it's easy to introduce inconsistencies in bottom-up, and easy to get stuck with a bad abstraction in top-down.  -->
 
-See also <conceptual_and_lexical_ontologies>
+See also [[[conceptual_and_lexical_ontologies]]]
 
 
 [^1]: Biasiotti and Tiscornia (2010) argue that legal ontologies need to be built bottom-up: _"Since legal domain is strictly dependent on its own textual nature, a methodology for ontology construction must privilege a bottom–up approaches, based on a solid theoretical model."_

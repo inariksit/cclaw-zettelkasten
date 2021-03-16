@@ -28,4 +28,4 @@ tainable;
 
 TODO: read more of the paper, list modern applications
 
-Sounds a bit similar to <dmn_constraint_tables_extension>?
+Sounds a bit similar to [[[dmn_constraint_tables_extension]]]?

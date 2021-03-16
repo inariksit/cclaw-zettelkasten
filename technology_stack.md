@@ -95,25 +95,25 @@ Once it is adopted by RaC-types, easier to convince Expert Systems people to ado
 
 ### Flora-2 (ErgoLite)
 
-Flora-2 uses its own frame syntax for data definitions but can also integrate with OWL. Libraries and integrations are lacking. It only answers the first two types of questions. It has a module system that allows you to compartmentalize and re-use code. <blawx> is an attempt at making it easier to learn, but has no real-world traction, yet.
+Flora-2 uses its own frame syntax for data definitions but can also integrate with OWL. Libraries and integrations are lacking. It only answers the first two types of questions. It has a module system that allows you to compartmentalize and re-use code. [[[blawx]]] is an attempt at making it easier to learn, but has no real-world traction, yet.
 
 ### ErgoAI
 
 Flora-2's big brother. Adds additional natural-language explanation features, and more libraries.
 
-(See <ergoai_ergolite>)
+(See [[[ergoai_ergolite]]])
 
 ### Docassemble
 
-<docassemble> generates interfaces, but not based on data structures. It has something approximating a backward-chaining reasoner for answering "what question do I need to ask next", and can use python to do forward-chaining calculations. The backward chaining can be overridden by procedural python code. But it can't do any of the other forms of queries. It uses Python's module system with some modifications, but there is no facility for separating legal, application, and interface logic. Because it is basically just Python with an error-handler added, it is relatively easy to extend. There are methods that are aimed at taking a docassemble interview and turning it into an SMS interface automatically, e.g.
+[[[docassemble]]] generates interfaces, but not based on data structures. It has something approximating a backward-chaining reasoner for answering "what question do I need to ask next", and can use python to do forward-chaining calculations. The backward chaining can be overridden by procedural python code. But it can't do any of the other forms of queries. It uses Python's module system with some modifications, but there is no facility for separating legal, application, and interface logic. Because it is basically just Python with an error-handler added, it is relatively easy to extend. There are methods that are aimed at taking a docassemble interview and turning it into an SMS interface automatically, e.g.
 
 ### Oracle Intelligent Advisor
 
-<oracle_intelligent_advisor> is an expert system tool that imposes its own data structure and generates interfaces in a pre-determined way for web only. Code re-use is possible, but not typical. I don't think it has a module system. It has the capability to answer search questions, provide explanations for answers, and it does backward chaining to determine what questions should be asked, but allows you to override that method. RElatively easy to learn, as it uses controlled natural language in word and excel files for the code.
+[[[oracle_intelligent_advisor]]] is an expert system tool that imposes its own data structure and generates interfaces in a pre-determined way for web only. Code re-use is possible, but not typical. I don't think it has a module system. It has the capability to answer search questions, provide explanations for answers, and it does backward chaining to determine what questions should be asked, but allows you to override that method. RElatively easy to learn, as it uses controlled natural language in word and excel files for the code.
 
 ### Neota Logic
 
-<neota_logic> is an expert system tool that can answer the first three sorts of questions and has backward chaining to answer the last question and determine interview order. Interview order can be overridden. It is slightly harder to learn than OIA, because the interface is more UML-like, but it is aimed at non-programmer users. Like OIA, it forces you to use its own data structure and language, and provides a means only to generate web interviews. Lacks object references, so very difficult to integrate with any other sort of data source.
+[[[neota_logic]]] is an expert system tool that can answer the first three sorts of questions and has backward chaining to answer the last question and determine interview order. Interview order can be overridden. It is slightly harder to learn than OIA, because the interface is more UML-like, but it is aimed at non-programmer users. Like OIA, it forces you to use its own data structure and language, and provides a means only to generate web interviews. Lacks object references, so very difficult to integrate with any other sort of data source.
 
 ### Accord Project
 
@@ -121,11 +121,11 @@ Accord project follows this architecture quite closely, but the developers were 
 
 ### LegalRuleML
 
-<legalruleml> is a legal knowledge representation language, but it has no semantics and cannot be directly executed, so there are no reasoners for it. As such, it can’t answer any of the query typers without first converting it into something else.
+[[[legalruleml]]] is a legal knowledge representation language, but it has no semantics and cannot be directly executed, so there are no reasoners for it. As such, it can’t answer any of the query typers without first converting it into something else.
 
 ### DMN
 
-<dmn> uses FEEL as an expression language, along with <decision_table>s, and it seems to use POJO as a data structure, which is nice if you are coding in Java. It has search, but no explanation capabilities.
+[[[dmn]]] uses FEEL as an expression language, along with [[[decision_table]]]s, and it seems to use POJO as a data structure, which is nice if you are coding in Java. It has search, but no explanation capabilities.
 
 ## What Would Make L4 Awesome
 

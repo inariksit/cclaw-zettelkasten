@@ -20,4 +20,4 @@ _Quote from the website_
 
 ## Formalism
 
-Catala is based on <default_logic>.
+Catala is based on [[[default_logic]]].

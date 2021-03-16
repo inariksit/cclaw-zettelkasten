@@ -28,7 +28,7 @@ would need to know in order to recognize that it was badly designed.
 (For a longer discussion, see [No Vehicles in the Park](https://digitalcommons.law.seattleu.edu/cgi/viewcontent.cgi?article=1623&context=sulr).)
 
 ### Mitigations
-* Susskind suggested limiting the users of <legal_expert_systems> to lawyers, so that
+* Susskind suggested limiting the users of [[[legal_expert_systems]]] to lawyers, so that
   they ought to know themselves if the answers are strange, or relevant
   information has been left out.
 * More realistically, you can limit automation to legal questions about which
@@ -36,7 +36,7 @@ would need to know in order to recognize that it was badly designed.
   interpreted areas of law more attractive.
 * Waivers where the user accepts the risks associated with the possibility that
   the tool fails to consider a relevant factor, and that disavow legal advice.
-* In the <smart_contract> context, the parties can agree to be bound by the
+* In the [[[smart_contract]]] context, the parties can agree to be bound by the
   result from the encoding even if other relevant factors exist. There may be
   limits, such as unconscionability, to how far this can work.
 

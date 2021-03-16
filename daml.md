@@ -8,7 +8,7 @@ tags:
 
 [DAML web page](https://daml.com/)
 
-A language for writing <smart_contract>s.
+A language for writing [[[smart_contract]]]s.
 The contract is automatically generated and signed by computers and sent between servers.
 
 For example, one company places an order of T-shirts for a conference. Now it

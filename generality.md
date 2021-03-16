@@ -8,7 +8,7 @@ tags:
 
 Event `A` is more general than event `B`, iff every instance of `B` is also an instance of `A`.
 
-Example from <normalized_legal_drafting_query_method>
+Example from [[[normalized_legal_drafting_query_method]]]
 
 * "penalty" is more general than "fine"
 * "penalty" is more general than "imprisonment"

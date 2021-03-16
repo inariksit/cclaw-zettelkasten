@@ -8,12 +8,12 @@ tags:
 
 1978 paper by Layman E. Allen: _Normalized legal drafting and the Query method_.
 
-Precursor to rules as code, computational contracts etc. "Normalized" legal document à la Allen ≈ <cnl> with the goal "Improve communication among humans".
+Precursor to rules as code, computational contracts etc. "Normalized" legal document à la Allen ≈ [[[cnl]]] with the goal "Improve communication among humans".
 
 ### Purpose
 
 Aims to fix _unintended_ syntactic ambiguity, imprecision, confusing turn of phrase or just plain incorrect meaning.
-(There are also <advantages_of_imprecision>, which this method would keep.)
+(There are also [[[advantages_of_imprecision]]], which this method would keep.)
 
 ### Normalization
 

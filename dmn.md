@@ -44,12 +44,12 @@ Calvanese et al (2016) [Semantics and Analysis of DMN Decision Tables](https://a
 
 ### Constraint tables
 
-<dmn_constraint_tables_extension> by Deryck et al (2019) allows FEEL expressions
+[[[dmn_constraint_tables_extension]]] by Deryck et al (2019) allows FEEL expressions
 
 ### DMN2RuleML
 
 There is a tool available for converting DMN decision tables into RuleML, on which
-<legalruleml> is based, called [DMN2RuleML](http://stark-cove-78485.herokuapp.com/decision-table).
+[[[legalruleml]]] is based, called [DMN2RuleML](http://stark-cove-78485.herokuapp.com/decision-table).
 
 ## NLG
 

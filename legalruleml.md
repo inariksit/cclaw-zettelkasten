@@ -25,7 +25,7 @@ Rule 1 translates to LegalRuleML as follows.
 
     <lrml:PrescriptiveStatement key="r1">
       <ruleml:Rule key=":ruletemplate1">
-        <METADATA>
+        [[[METADATA]]]
         <ACTUAL RULE CONTENT>
       </ruleml:Rule>
     </lrml:PrescriptiveStatement>
@@ -43,7 +43,7 @@ Inside the Rule, there is first some metadata and then the actual rule content.
 
 This rule has metadata about the rule _strength_: whether or not it can be overriden[^1]. This rule can be, hence its strength is Defeasible. To make this not just meaningless characters on the contract writer's computer, the property `DefeasibleStrength` refers to a shared resource by an [IRI](https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier).
 
-(These IRI links may point to an element in an <ontology>, but LegalRuleML is not an ontology language, and LegalRuleML documents are not ontologies.)
+(These IRI links may point to an element in an [[[ontology]]], but LegalRuleML is not an ontology language, and LegalRuleML documents are not ontologies.)
 
 
 ### Rule content
@@ -58,7 +58,7 @@ This rule has metadata about the rule _strength_: whether or not it can be overr
         </ruleml:if>
 
 It starts with a _premise_, constructed as an if-clause[^2].
-The syntax of LegalRuleML is clear enough: `<if>statement</if>`.
+The syntax of LegalRuleML is clear enough: `[[[if]]]statement[[[/if]]]`.
 
 Inside the atom there are two things:
 - Relation: `<ruleml:Rel iri=":specialOrder"/>`
@@ -78,8 +78,8 @@ Inside the atom there are two things:
         </ruleml:then>
 
 The conclusion completes the rule with an `Obligation`:
-* If an `<Ind>X</Ind>` is marked as special order,  (_premise_)
-* then that `<Ind>X</Ind>` is subject to surcharge. (_conclusion_)
+* If an `[[[Ind]]]X[[[/Ind]]]` is marked as special order,  (_premise_)
+* then that `[[[Ind]]]X[[[/Ind]]]` is subject to surcharge. (_conclusion_)
 
 In addition to `Obligation`, there are other types of deontic operators, such as permissions, prohibitions, rights.
 
@@ -89,7 +89,7 @@ LegalRuleML is not for documenting laws, and it’s not for writing code, it’s
 
 
 Contrast with
-- <akoma_ntoso>, which is for documenting laws
+- [[[akoma_ntoso]]], which is for documenting laws
 - ??? which is for writing code
 - TODO: other langs/tools and how it differs (eventually move to another page)
 

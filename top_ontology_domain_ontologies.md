@@ -10,7 +10,7 @@ A __domain ontology__ describes details of a particular domain. Examples of doma
 
 In contrast, a __top ontology__ (synonyms: __upper ontology__, __top-level ontology__, __foundation ontology__) _"describes very general concepts that are the same across all domains. The aim is to have a large number on ontologies accessible under this upper ontology.”_ (Mascardi et al. (2007) [A Comparison of Upper Ontologies](http://personales.upv.es/prosso/resources/MascardiEtAl_WOA07.pdf))
 
-<sumo> and <cyc> are big, well-known top ontologies. [Mascardi et al.](http://personales.upv.es/prosso/resources/MascardiEtAl_WOA07.pdf) list other big ones (in 2007). [Wikipedia](https://en.wikipedia.org/wiki/Upper_ontology#Available_upper_ontologies) has a more up-to-date list.[^1].
+[[[sumo]]] and [[[cyc]]] are big, well-known top ontologies. [Mascardi et al.](http://personales.upv.es/prosso/resources/MascardiEtAl_WOA07.pdf) list other big ones (in 2007). [Wikipedia](https://en.wikipedia.org/wiki/Upper_ontology#Available_upper_ontologies) has a more up-to-date list.[^1].
 
 ## Purpose of top ontology
 
@@ -46,7 +46,7 @@ For instance, say that a core ontology has a class `PhysicalObject` and includes
 
 The term __core ontology__ is sometimes used. If I (Inari) have understood correctly, a core ontology is sort of an upper ontology for a domain. So a true upper ontology is super generic, starting from `Entity`, core ontology would start from the most general concepts for a given field, like (for legal domain) _legal role_, _process_, _place_, _time_, etc.
 
-Some legal core ontologies are listed in <legal_ontology>.
+Some legal core ontologies are listed in [[[legal_ontology]]].
 
 
 [^1]: Heuristic of relevance: does the ontology have its own Wikipedia page. Wikipedia remarks _"Note that the lack of fresh releases does not imply inactivity or uselessness."_ This is true especially for an upper ontology. The purpose is to be compact and general, and that kind of information doesn't need to be updated.

@@ -10,7 +10,7 @@ tags:
 
 
 _Description logics_ (DL) are a family of logics, often used in ontologies.
-(For more discussion on logics, see <logics_formalisms_languages_applications>)
+(For more discussion on logics, see [[[logics_formalisms_languages_applications]]])
 
 Most DLs are decidable fragments of first-order logic.
 [Krötzsch et al. (2013)](https://arxiv.org/abs/1201.4089) explain that there are many DLs, because different applications require different expressivity from the logic.

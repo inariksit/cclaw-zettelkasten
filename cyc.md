@@ -15,7 +15,7 @@ The main Cyc ontology is commercial, but there is a research license, and no lon
 
 ## Design
 
-Cyc is divided in modules called _microtheories_. A microtheory contains _assertions_ (same as _axioms_ in <sumo>).
+Cyc is divided in modules called _microtheories_. A microtheory contains _assertions_ (same as _axioms_ in [[[sumo]]]).
 
 Assertions within a microtheory need to be consistent with each other, but they can be inconsistent with other microtheories.
 
@@ -44,8 +44,8 @@ Cyc is written in a language called CycL.
 > Default assertions can be overridden by new knowledge, whether it comes from a person using Cyc or is derived by Cyc's own inference engine. Instead of using only a single support or line of reasoning to determine if an assertion is true or false, Cyc's inference engine uses argumentation. This is the process of weighing various arguments, pro and con, to arrive at a truth value for the assertion.
 
 ## Differences between Cyc and SUMO
-Cyc has been around since 1984, and has inspired other ontologies and knowledge bases. <sumo> (released in 2000) is very similar to Cyc.
-Since there is already a long zettel about <sumo>, I'll just list some things in which Cyc is different.
+Cyc has been around since 1984, and has inspired other ontologies and knowledge bases. [[[sumo]]] (released in 2000) is very similar to Cyc.
+Since there is already a long zettel about [[[sumo]]], I'll just list some things in which Cyc is different.
 
 ### Modules and consistency
 

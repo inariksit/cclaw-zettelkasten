@@ -8,14 +8,14 @@ tags:
 # Contracts as code
 
 Broad term that covers
-- <automatic_contract_processing> of legal contracts
-- <smart_contract>
+- [[[automatic_contract_processing]]] of legal contracts
+- [[[smart_contract]]]
 
 ### Terminology
 
 Documenting here what terms are used where. TODO make sense of the terminology.
 
-Used in <computable_contracts>
+Used in [[[computable_contracts]]]
 - “computable contract(ing)”
 - “data-oriented contract(ing)”
 - “contract-as-data”

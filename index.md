@@ -22,7 +22,7 @@ On the other hand, real-life situations are often vague and ambiguous. For those
 
 But there are a lot of  situations where that flexibility isn't as crucial, and we want to automate that area. It's like leaving poetry for professional translators and automating instruction manual translation.
 
-<z:zettels?tag=natural_language>
+[[[z:zettels?tag=natural_language]]]
 
 ### Plain text is a suboptimal format
 
@@ -31,20 +31,20 @@ But there are a lot of  situations where that flexibility isn't as crucial, and 
 
 ## Approaches to automate/improve
 
-<z:zettels?tag=approach>
+[[[z:zettels?tag=approach]]]
 
 ## Limitations
 
-See <fundamental_limits>
+See [[[fundamental_limits]]]
 
 ## Basics
 
 If you're unsure where to start, start from basics.
-<z:zettels?tag=basics>
+[[[z:zettels?tag=basics]]]
 
 
 ## TODO
 
 You're welcome to revise, add to, split, merge etc. _any entry_ in this zettelkasten. But these ones with the tag `TODO` are particularly unfinished.
 
-<z:zettels?tag=todo&cf>
+[[z:zettels?tag=todo]]

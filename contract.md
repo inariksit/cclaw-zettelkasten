@@ -9,7 +9,7 @@ tags:
 _Contract_ means slightly different things in different fields. [Camilleri (2017)](https://gupea.ub.gu.se/bitstream/2077/53815/1/gupea_2077_53815_1.pdf) lists the following 4.
 
 
-<z:zettels?tag=contract&cf>
+[[z:zettels?tag=contract]]
 
 
 ### Contract in software engineering

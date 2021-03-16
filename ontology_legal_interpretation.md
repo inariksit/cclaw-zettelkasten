@@ -8,11 +8,11 @@ tags:
 
 
 [Fernández-Barrera and Sartor (2010)](https://link.springer.com/chapter/10.1007/978-94-007-0120-5_2)
- argue that _legal concepts_ depend on the _legal norms_ in which they appear. Because of that, establishing legal concepts in an <ontology> is actually a central part of _legal interpretation_.
+ argue that _legal concepts_ depend on the _legal norms_ in which they appear. Because of that, establishing legal concepts in an [[[ontology]]] is actually a central part of _legal interpretation_.
 
 > __[T]he characterization of legal concepts__ […] concerns __establishing what norms hold in a legal system__ and thus what norms have to be applied by judges and imposed upon the party. It is not an activity dealing with mere descriptive linguistics: __it is rather a central aspect of legal interpretation.__
 
-It follows that <legal_ontology> is constantly evolving, and it needs to be prepared for legal change. Introducing new legal norms, as well as changing and deprecating old ones, makes static conceptual hierarchies also deprecated.
+It follows that [[[legal_ontology]]] is constantly evolving, and it needs to be prepared for legal change. Introducing new legal norms, as well as changing and deprecating old ones, makes static conceptual hierarchies also deprecated.
 
 Fernández-Barrera and Sartor suggest that legal interpretation and ontology engineering should evolve together. Furthermore, legal ontologies should reflect up-to-date rulings of court cases.
 
@@ -47,7 +47,7 @@ For example, the EU laws are written on the EU level, but _implemented_ by the n
 * EU and national levels use the same term for the same concept, but different _legal interpretation_.
   - [Fernández-Barrera and Sartor (2010)](https://link.springer.com/chapter/10.1007/978-94-007-0120-5_2) give the following example: _“personal data” according to the EU definition only covers data concerning a physical person (a human) while the Italian definition also includes data concerning “legal persons, bodies or associations”._
 
-To model the complexity, Boella and Rossi suggest a multi-layer ontology, with 4 different levels. They don't have a concrete example nor a picture, so this is pretty abstract, and I may have misunderstood something. (For terms like lightweight and core ontology, see <ontology_interoperability>.)
+To model the complexity, Boella and Rossi suggest a multi-layer ontology, with 4 different levels. They don't have a concrete example nor a picture, so this is pretty abstract, and I may have misunderstood something. (For terms like lightweight and core ontology, see [[[ontology_interoperability]]].)
 
 ### Level 1: Lightweight domain ontologies
 

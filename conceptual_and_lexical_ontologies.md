@@ -6,9 +6,9 @@ tags:
 
 # Conceptual ontologies and lexical ontologies
 
-_Related to <ontology_interoperability>._
+_Related to [[[ontology_interoperability]]]._
 
-<wordnet> is sometimes called a "__lexical__ ontology". Its material is words, and the relations are particularly relevant for words. They include
+[[[wordnet]]] is sometimes called a "__lexical__ ontology". Its material is words, and the relations are particularly relevant for words. They include
 synonymy (_big, large_);
 antonymy (_big, small_);
 hyponymy and hypernymy (_chair, furniture_);
@@ -29,13 +29,13 @@ In a multilayer model, the conceptual and the lexical levels are both present in
 Core elements in consumer law and their relations to each other.
 
 #### Concepts
-List of <wordnet> synsets in multiple languages.
+List of [[[wordnet]]] synsets in multiple languages.
 
 <!-- (Technically, the entities on the concept layer are _pointers_ to a list of synsets, like C2 points to `synset-supplier` and `synset-fornitore`. Conceptually this is no different from if C2 were just a list `[supplier, fornitore]`.) -->
 
 #### Lexicons
 
-Monolingual terminologies which are structured into a <wordnet>. The lexical level contains the relations mentioned before in this section (synonymy, antonymy, derivation, …)
+Monolingual terminologies which are structured into a [[[wordnet]]]. The lexical level contains the relations mentioned before in this section (synonymy, antonymy, derivation, …)
 
 <!-- > [judges] link general and abstract legislative statements to their linguistic manifestation -->
 

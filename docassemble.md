@@ -114,7 +114,7 @@ far less powerful.
 
 ## Rules as Code Integration
 
-<blawx> has a module that can be used in a docassemble server to simplify the process of having the Blawx
+[[[blawx]]] has a module that can be used in a docassemble server to simplify the process of having the Blawx
 reasoner answer questions using Docassemble interview data and rules encoded in the Blawx tool.
 
 ## Smart Contract Integrations

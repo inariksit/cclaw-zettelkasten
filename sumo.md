@@ -36,7 +36,7 @@ TODO: I don't know how the linking works in practice, or if the technical detail
 
 ## SUO-KIF
 
-SUMO is written in SUO-KIF. Unlike most ontology languages, SUO-KIF is __not__ among <description_logics>.
+SUMO is written in SUO-KIF. Unlike most ontology languages, SUO-KIF is __not__ among [[[description_logics]]].
 
 ### Expressivity
 
@@ -44,7 +44,7 @@ _Quote from Mitrović et al. (2019) [Modeling Legal Terminology in SUMO](https:/
 
 > The existing SUMO model has most of the elements needed for a legal framework. It is implemented in a higher-order language, which, unlike a description logic or even first-order logic, allows us to use entire formulas as arguments to relations.
 
-SUMO is also translated into <owl>: [http://www.adampease.org/OP/SUMO.owl](http://www.adampease.org/OP/SUMO.owl).
+SUMO is also translated into [[[owl]]]: [http://www.adampease.org/OP/SUMO.owl](http://www.adampease.org/OP/SUMO.owl).
 
 ## Terms
 _In some other ontologies, these would be called **concepts**._
@@ -205,7 +205,7 @@ But that's not all: you can do actual computations using Functions. [Adam Pease 
 
 _Quotes from the SUMO book (Pease, 2011)._
 
-SUMO has hand-written mappings to all of WordNet 3.0. (Latest version of WordNet is 3.1.) A synset in <wordnet> can correspond to SUMO term one-to-one, like WN _satellite_ to SUMO `ArtificialSatellite`, or in a subsumption relation, like WN _elk_ and _deer_ to SUMO `HoofedMammal`. The more general a SUMO concept is, the more WordNet synsets it covers.
+SUMO has hand-written mappings to all of WordNet 3.0. (Latest version of WordNet is 3.1.) A synset in [[[wordnet]]] can correspond to SUMO term one-to-one, like WN _satellite_ to SUMO `ArtificialSatellite`, or in a subsumption relation, like WN _elk_ and _deer_ to SUMO `HoofedMammal`. The more general a SUMO concept is, the more WordNet synsets it covers.
 
 WordNet was an important source of terms when SUMO was constructed.
 

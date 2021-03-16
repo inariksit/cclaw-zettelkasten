@@ -11,7 +11,7 @@ Visual representations of legal text, in order to make it easier for humans to r
 ### Diagrams
 
 - [C-O diagrams](http://www.cse.chalmers.se/~gersch/scc2010.pdf)
-- Diagram notation in <normalized_legal_drafting_query_method>
+- Diagram notation in [[[normalized_legal_drafting_query_method]]]
 - Graphs generated from licenses at [Licentia](http://licentia.inria.fr/visualize/licAPACHE)
 
 ### Formatting
@@ -30,6 +30,6 @@ if {the flight} leaves {in two hours} then both
   - {the ground crew} must request {the passenger manifest}
 ```
 
-(The particular example also happens to be a <cnl> that compiles to a formal representation. But this is an orthogonal question.)
+(The particular example also happens to be a [[[cnl]]] that compiles to a formal representation. But this is an orthogonal question.)
 
-See also <tabular_interface>
+See also [[[tabular_interface]]]

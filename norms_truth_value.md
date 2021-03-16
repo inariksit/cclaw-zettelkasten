@@ -42,6 +42,6 @@ That is more like a declarative prescription which can be assigned a truth value
 That reads like a specification. It is not something which can be assigned a truth value; it is something which assigns truth values! From that spec, we can assign a truth value to a sequence of events; Hvitved (using the language of CSP and process calculi) would call it a “conforming trace”.
 
 Norms can assign truth values e.g. “x is valid according to `v(x)`, where `v` is given
-by some <dmn>/FEEL construct `v :: X -> Bool`, and `X` is a well-formed set of
+by some [[[dmn]]]/FEEL construct `v :: X -> Bool`, and `X` is a well-formed set of
 `Map SymbolName (Maybe Bool)`.
-If we want <default_logic>, we layer in a set of defaults `Map SymbolName Bool`.
+If we want [[[default_logic]]], we layer in a set of defaults `Map SymbolName Bool`.

@@ -9,14 +9,14 @@ tags:
 
 [!["Things defined in Black's Law Dictionary"](https://raw.githubusercontent.com/inariksit/cclaw-zettelkasten/master/things.png "Things are the subjects of dominion or property, as distinguished from person. They are distributed into three kinds: (1) Things real or immovable, comprehending lands, tenements, and hereditable: (2) things personal or movable, comprehending goods and chattels: and (3) things mixed. partaking of the characteristics of the trio former")](https://en.wikisource.org/wiki/Page:Black%27s_Law_Dictionary_(Second_Edition).djvu/1161){#pic .ui .floated .right .medium .image}
 
-Formal decription of the legal domain[^1] in an <ontology>.
+Formal decription of the legal domain[^1] in an [[[ontology]]].
 
 _"Good news: lawyers have been doing it almost as long as Aristotle-and you all think like ontology engineers"_ -- [Burkhard Schafer, ReMeP 2020](https://www.remep.net/wp-content/uploads/2020/06/Burkhart-Schafer_Legal-Ontologies-a-very-short-introduction_ReMeP2020.pptx.pdf)
 
 (See also rest of the slides from ReMeP 2020's panel [Legal Ontologies: Why Are They Relevant In Practice?](https://www.remep.net/materials-2020/))
 
 ## Types of legal ontologies
-For explanation on core, domain and lexical ontology, see <ontology_interoperability>.
+For explanation on core, domain and lexical ontology, see [[[ontology_interoperability]]].
 
 ### Legal core ontologies
 
@@ -47,7 +47,7 @@ epistemological aspects of law as a control system of social behaviours."_
 * CLO (Core Legal Ontology) (Gangemi et al. 2003) _"organises legal concepts
 and relations on the basis of formal properties defined in the DOLCE+ foundational
 ontology library (Masolo et al. 2002)"_
-* [LKIF-Core](https://github.com/RinkeHoekstra/lkif-core#readme) (Hoekstra et al. 2007), written in <owl>, _"is […] a **library of ontologies** relevant for the legal domain than a monolithic body of definitions. The most abstract concepts are defined in five closely related modules: **top, place, mereology, time and space-time**. LKIF’s top ontology is largely based on the top-level of LRI-Core but has less ontological commitment in the sense that it imposes less restrictions on subclasses of the top categories."_
+* [LKIF-Core](https://github.com/RinkeHoekstra/lkif-core#readme) (Hoekstra et al. 2007), written in [[[owl]]], _"is […] a **library of ontologies** relevant for the legal domain than a monolithic body of definitions. The most abstract concepts are defined in five closely related modules: **top, place, mereology, time and space-time**. LKIF’s top ontology is largely based on the top-level of LRI-Core but has less ontological commitment in the sense that it imposes less restrictions on subclasses of the top categories."_
 <!-- _"is a modular collection of basic legal concepts aimed at supporting the implementation of rule-based knowledge bases for regulatory decision support systems."_  -->
 
 Might be relevant to read/skim Breuker & Hoekstra [Epistemology and ontology in core ontologies: FOLaw and LRI-Core, two core ontologies for law](http://ceur-ws.org/Vol-118/paper2.pdf)
@@ -90,12 +90,12 @@ TODO: where should things like [Lynx: Legal Knowledge Graph](http://www.lynx-pro
 ### Lexical ontologies applied to legal material
 
 For example:
-* [JurWordNet](https://www.fi.muni.cz/gwc2004/proc/111.pdf), where Italian <wordnet> is extended for legal domain.
+* [JurWordNet](https://www.fi.muni.cz/gwc2004/proc/111.pdf), where Italian [[[wordnet]]] is extended for legal domain.
 
 
 ## Logical semantics of legal rules
 
-Many ontology languages are based on <description_logics>, which aren't powerful enough represent the logical semantics required for legal rules. [Mitrović et al. (2019)](https://www.researchgate.net/publication/338937692_Modeling_Legal_Terminology_in_SUMO) model legal knowledge in <sumo>, which is written in a more expressive language.
+Many ontology languages are based on [[[description_logics]]], which aren't powerful enough represent the logical semantics required for legal rules. [Mitrović et al. (2019)](https://www.researchgate.net/publication/338937692_Modeling_Legal_Terminology_in_SUMO) model legal knowledge in [[[sumo]]], which is written in a more expressive language.
 
 > It also addresses computational sufficiency by being **written in a higher order logic**, so that we can at least have the capability of automated reasoning about beliefs, intent, temporal qualification, modality and many other issues that cannot be captured explicitly in a less expressive logic.
 
